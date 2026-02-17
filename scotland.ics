@@ -46,7 +46,7 @@ UID:b64a65e4c61b6bdd0d250c9164137cd1@scotlandfixtures
 DTSTAMP:20260217T193613Z
 DTSTART;TZID=Europe/London:20260331T193000
 DTEND;TZID=Europe/London:20260331T213000
-SUMMARY:Scotland v Cote D'Ivoire
+SUMMARY:Scotland v Côte D'Ivoire
 DESCRIPTION:Friendly Match - Scotland Men's A
 LOCATION:Hill Dickinson Stadium\n32 Regent Road\, Liverpool\, L5 9SR\, E
  ngland
@@ -67,7 +67,7 @@ UID:2fb9876abdbadc58f5458e18f64c8194@scotlandfixtures
 DTSTAMP:20260217T193613Z
 DTSTART;TZID=Europe/London:20260530T130000
 DTEND;TZID=Europe/London:20260530T150000
-SUMMARY:Scotland v Curacao
+SUMMARY:Scotland v Curaçao
 DESCRIPTION:Friendly Match - Scotland Men's A
 LOCATION:Barclays Hampden\nLetherby Drive\, Glasgow\, G42 9BA\, Scotland
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-MAPKIT-HANDLE=CAESxgIIrk0Q
