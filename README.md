@@ -23,7 +23,7 @@ https://raw.githubusercontent.com/sruzgar/fixtures/refs/heads/main/scotland.ics
 
 Tap this link on your iPhone:
 
-webcal://raw.githubusercontent.com/sruzgar/fixtures/refs/heads/main/scotland.ics
+https://raw.githubusercontent.com/sruzgar/fixtures/refs/heads/main/scotland.ics
 
 Or:
 
