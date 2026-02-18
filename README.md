@@ -15,7 +15,7 @@ Subscribe once and updates will sync automatically.
 
 **Raw calendar URL (for Google / Outlook / manual use):**
 
-https://raw.githubusercontent.com/sruzgar/fixtures/refs/heads/main/scotland.ics
+https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics
 
 ------------------------------------------------------------------------
 
