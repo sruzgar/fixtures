@@ -151,7 +151,8 @@ DTSTAMP:20260217T193613Z
 DTSTART;TZID=Europe/London:20260926T140000
 DTEND;TZID=Europe/London:20260926T160000
 SUMMARY:Slovenia v Scotland
-DESCRIPTION:UEFA Nations League - League B - Group 1
+DESCRIPTION:UEFA Nations League - League B - Group 1\n\nhttps://www.uefa.com
+ /uefanationsleague/match/2048027/\n
 LOCATION:Slovenia (Stadium TBC)
 END:VEVENT
 
@@ -161,7 +162,8 @@ DTSTAMP:20260217T193613Z
 DTSTART;TZID=Europe/London:20260929T194500
 DTEND;TZID=Europe/London:20260929T214500
 SUMMARY:Scotland v Switzerland
-DESCRIPTION:UEFA Nations League - League B - Group 1
+DESCRIPTION:UEFA Nations League - League B - Group 1\n\nhttps://www.uefa.com
+ /uefanationsleague/match/2048001/\n
 LOCATION:Barclays Hampden\nLetherby Drive\, Glasgow\, G42 9BA\, Scotland
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-MAPKIT-HANDLE=CAESxgIIrk0Q
  rc2Tg96v6J62ARoSCUrIUcq16UtAES20c5oFAhHAInYKDlVuaXRlZCBLaW5nZG9tEgJHQhoI
@@ -181,7 +183,8 @@ DTSTAMP:20260217T193613Z
 DTSTART;TZID=Europe/London:20261003T194500
 DTEND;TZID=Europe/London:20261003T214500
 SUMMARY:Macedonia v Scotland
-DESCRIPTION:UEFA Nations League - League B - Group 1
+DESCRIPTION:UEFA Nations League - League B - Group 1\n\nhttps://www.uefa.com
+ /uefanationsleague/match/2047975/\n
 LOCATION:North Macedonia (Stadium TBC)
 END:VEVENT
 
@@ -191,7 +194,8 @@ DTSTAMP:20260217T193613Z
 DTSTART;TZID=Europe/London:20261006T194500
 DTEND;TZID=Europe/London:20261006T214500
 SUMMARY:Scotland v Slovenia
-DESCRIPTION:UEFA Nations League - League B - Group 1
+DESCRIPTION:UEFA Nations League - League B - Group 1\n\nhttps://www.uefa.com
+ /uefanationsleague/match/2047948/\n
 LOCATION:Barclays Hampden\nLetherby Drive\, Glasgow\, G42 9BA\, Scotland
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-MAPKIT-HANDLE=CAESxgIIrk0Q
  rc2Tg96v6J62ARoSCUrIUcq16UtAES20c5oFAhHAInYKDlVuaXRlZCBLaW5nZG9tEgJHQhoI
@@ -211,7 +215,8 @@ DTSTAMP:20260217T193613Z
 DTSTART;TZID=Europe/London:20261113T194500
 DTEND;TZID=Europe/London:20261113T214500
 SUMMARY:Scotland v Macedonia
-DESCRIPTION:UEFA Nations League - League B - Group 1
+DESCRIPTION:UEFA Nations League - League B - Group 1\n\nhttps://www.uefa.com
+ /uefanationsleague/match/2047888/\n
 LOCATION:Barclays Hampden\nLetherby Drive\, Glasgow\, G42 9BA\, Scotland
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-MAPKIT-HANDLE=CAESxgIIrk0Q
  rc2Tg96v6J62ARoSCUrIUcq16UtAES20c5oFAhHAInYKDlVuaXRlZCBLaW5nZG9tEgJHQhoI
@@ -231,7 +236,8 @@ DTSTAMP:20260217T193613Z
 DTSTART;TZID=Europe/London:20261116T194500
 DTEND;TZID=Europe/London:20261116T214500
 SUMMARY:Switzerland v Scotland
-DESCRIPTION:UEFA Nations League - League B - Group 1
+DESCRIPTION:UEFA Nations League - League B - Group 1\n\nhttps://www.uefa.com
+ /uefanationsleague/match/2047914/\n
 LOCATION:Switzerland (Stadium TBC)
 END:VEVENT
 
