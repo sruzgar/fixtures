@@ -32,7 +32,7 @@ https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics
 ## 🤖 Android (Google Calendar)
 
 1.  Open https://calendar.google.com
-2.  Click **+** next to *Other calendars*
+2.  Click **+** next to **Other calendars**
 3.  Select **From URL**
 4.  Paste the HTTPS URL above
 5.  Click **Add calendar**
