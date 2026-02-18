@@ -21,12 +21,6 @@ https://raw.githubusercontent.com/sruzgar/fixtures/refs/heads/main/scotland.ics
 
 ## 📱 iPhone / Apple Calendar (One-Tap)
 
-Tap this link on your iPhone:
-
-https://raw.githubusercontent.com/sruzgar/fixtures/refs/heads/main/scotland.ics
-
-Or:
-
 1.  Open **Settings**
 2.  Go to **Calendar → Calendar Accounts**
 3.  Tap **Add Account → Add Other ACcount...**
@@ -41,10 +35,7 @@ Or:
 1.  Open https://calendar.google.com
 2.  Click **+** next to *Other calendars*
 3.  Select **From URL**
-4.  Paste:
-
-https://raw.githubusercontent.com/sruzgar/fixtures/refs/heads/main/scotland.ics
-
+4.  Paste the HTTPS URL above
 5.  Click **Add calendar**
 
 It will sync automatically to Android devices using that Google account.
