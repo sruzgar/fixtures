@@ -1,6 +1,7 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//Scotland Fixtures 2026//EN
+PRODID:-//Scotland Fixtures//EN
+X-WR-CALNAME:Scotland Fixtures
 CALSCALE:GREGORIAN
 BEGIN:VTIMEZONE
 TZID:Europe/London
