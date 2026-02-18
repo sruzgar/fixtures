@@ -1,11 +1,10 @@
 # Scotland National Team Fixtures & Results
 
-[![Subscribe](https://img.shields.io/badge/subscribe-Calendar-blue.svg)](#subscribe)
 [![Last
 updated](https://img.shields.io/github/last-commit/sruzgar/fixtures.svg)](https://github.com/sruzgar/fixtures/commits/main)
 
 A subscription-based calendar (`.ics`) with Scotland National Team
-fixtures and results.
+fixtures and results. This calendar includes stadium information, match descriptions, and links to match details.
 
 Subscribe once and updates will sync automatically.
 
