@@ -19,7 +19,7 @@ https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics
 
 ------------------------------------------------------------------------
 
-## 📱 iPhone / Apple Calendar (One-Tap)
+## 📱 iPhone / Apple Calendar
 
 1.  Open **Settings**
 2.  Go to **Calendar → Calendar Accounts**
