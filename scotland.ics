@@ -26,7 +26,7 @@ BEGIN:VEVENT
 UID:scotland-japan-20260328@scotlandfixtures
 DTSTAMP:20260217T120000Z
 DTSTART;TZID=Europe/London:20260328T170000
-DTEND;TZID=Europe/London:20260328T190000
+DTEND;TZID=Europe/London:20260328T183000
 SUMMARY:Scotland v Japan
 DESCRIPTION:Friendly Match
 LOCATION:Barclays Hampden\nLetherby Drive\, Glasgow\, G42 9BA\, Scotland
@@ -47,7 +47,7 @@ BEGIN:VEVENT
 UID:b64a65e4c61b6bdd0d250c9164137cd1@scotlandfixtures
 DTSTAMP:20260217T193613Z
 DTSTART;TZID=Europe/London:20260331T193000
-DTEND;TZID=Europe/London:20260331T213000
+DTEND;TZID=Europe/London:20260331T210000
 SUMMARY:Scotland v Côte D'Ivoire
 DESCRIPTION:Friendly Match
 LOCATION:Hill Dickinson Stadium\n32 Regent Road\, Liverpool\, L5 9SR\, E
@@ -68,7 +68,7 @@ BEGIN:VEVENT
 UID:2fb9876abdbadc58f5458e18f64c8194@scotlandfixtures
 DTSTAMP:20260217T193613Z
 DTSTART;TZID=Europe/London:20260530T130000
-DTEND;TZID=Europe/London:20260530T150000
+DTEND;TZID=Europe/London:20260530T143000
 SUMMARY:Scotland v Curaçao
 DESCRIPTION:Friendly Match
 LOCATION:Barclays Hampden\nLetherby Drive\, Glasgow\, G42 9BA\, Scotland
@@ -88,7 +88,7 @@ BEGIN:VEVENT
 UID:a7feaec78f01d391597941b8ae52db74@scotlandfixtures
 DTSTAMP:20260217T193613Z
 DTSTART;TZID=Europe/London:20260614T020000
-DTEND;TZID=Europe/London:20260614T040000
+DTEND;TZID=Europe/London:20260614T033000
 SUMMARY:Haiti v Scotland
 DESCRIPTION:FIFA World Cup - Group C\n\nhttps://www.fifa.com/en/match-centre/match/17/285023/289273/400021453\n
 LOCATION:Gillette Stadium\n1 Patriot Pl\, Foxborough\, MA  02035\, Unite
@@ -109,7 +109,7 @@ BEGIN:VEVENT
 UID:cee3ebe3300073393c1f7b7020d67a52@scotlandfixtures
 DTSTAMP:20260217T193613Z
 DTSTART;TZID=Europe/London:20260619T230000
-DTEND;TZID=Europe/London:20260620T010000
+DTEND;TZID=Europe/London:20260620T003000
 SUMMARY:Scotland v Morocco
 DESCRIPTION:FIFA World Cup - Group C\n\nhttps://www.fifa.com/en/match-centre/match/17/285023/289273/400021454\n
 LOCATION:Gillette Stadium\n1 Patriot Pl\, Foxborough\, MA  02035\, Unite
@@ -130,7 +130,7 @@ BEGIN:VEVENT
 UID:610006caf5100802a33af57f44dc2dfe@scotlandfixtures
 DTSTAMP:20260217T193613Z
 DTSTART;TZID=Europe/London:20260624T230000
-DTEND;TZID=Europe/London:20260625T010000
+DTEND;TZID=Europe/London:20260625T003000
 SUMMARY:Scotland v Brazil
 DESCRIPTION:FIFA World Cup - Group C\n\nhttps://www.fifa.com/en/match-centre/match/17/285023/289273/400021455\n
 LOCATION:Hard Rock Stadium\n347 Don Shula Dr\, Miami Gardens\, FL  33056
@@ -151,7 +151,7 @@ BEGIN:VEVENT
 UID:afedea3b4c8eecf9e945ea5f1ab8d57d@scotlandfixtures
 DTSTAMP:20260217T193613Z
 DTSTART;TZID=Europe/London:20260926T140000
-DTEND;TZID=Europe/London:20260926T160000
+DTEND;TZID=Europe/London:20260926T153000
 SUMMARY:Slovenia v Scotland
 DESCRIPTION:UEFA Nations League - League B - Group 1\n\nhttps://www.uefa.com
  /uefanationsleague/match/2048027/\n
@@ -162,7 +162,7 @@ BEGIN:VEVENT
 UID:1de87a781c5adba1fb3fc3835511079e@scotlandfixtures
 DTSTAMP:20260217T193613Z
 DTSTART;TZID=Europe/London:20260929T194500
-DTEND;TZID=Europe/London:20260929T214500
+DTEND;TZID=Europe/London:20260929T211500
 SUMMARY:Scotland v Switzerland
 DESCRIPTION:UEFA Nations League - League B - Group 1\n\nhttps://www.uefa.com
  /uefanationsleague/match/2048001/\n
@@ -183,7 +183,7 @@ BEGIN:VEVENT
 UID:8e13d2c7e339cb7b191cbf41769b8836@scotlandfixtures
 DTSTAMP:20260217T193613Z
 DTSTART;TZID=Europe/London:20261003T194500
-DTEND;TZID=Europe/London:20261003T214500
+DTEND;TZID=Europe/London:20261003T211500
 SUMMARY:North Macedonia v Scotland
 DESCRIPTION:UEFA Nations League - League B - Group 1\n\nhttps://www.uefa.com
  /uefanationsleague/match/2047975/\n
@@ -194,7 +194,7 @@ BEGIN:VEVENT
 UID:b182910473833142554025705cef1599@scotlandfixtures
 DTSTAMP:20260217T193613Z
 DTSTART;TZID=Europe/London:20261006T194500
-DTEND;TZID=Europe/London:20261006T214500
+DTEND;TZID=Europe/London:20261006T211500
 SUMMARY:Scotland v Slovenia
 DESCRIPTION:UEFA Nations League - League B - Group 1\n\nhttps://www.uefa.com
  /uefanationsleague/match/2047948/\n
@@ -215,7 +215,7 @@ BEGIN:VEVENT
 UID:5038b8fbaef2f3fdf32bee9aeb64bbf3@scotlandfixtures
 DTSTAMP:20260217T193613Z
 DTSTART;TZID=Europe/London:20261113T194500
-DTEND;TZID=Europe/London:20261113T214500
+DTEND;TZID=Europe/London:20261113T211500
 SUMMARY:Scotland v North Macedonia
 DESCRIPTION:UEFA Nations League - League B - Group 1\n\nhttps://www.uefa.com
  /uefanationsleague/match/2047888/\n
@@ -236,7 +236,7 @@ BEGIN:VEVENT
 UID:04e2cb3faf19c2b77dbc699effd99f8e@scotlandfixtures
 DTSTAMP:20260217T193613Z
 DTSTART;TZID=Europe/London:20261116T194500
-DTEND;TZID=Europe/London:20261116T214500
+DTEND;TZID=Europe/London:20261116T211500
 SUMMARY:Switzerland v Scotland
 DESCRIPTION:UEFA Nations League - League B - Group 1\n\nhttps://www.uefa.com
  /uefanationsleague/match/2047914/\n
