@@ -3,8 +3,7 @@
 [![Last
 updated](https://img.shields.io/github/last-commit/sruzgar/fixtures.svg)](https://github.com/sruzgar/fixtures/commits/main)
 
-A subscription-based calendar (`.ics`) with Scotland National Team
-fixtures and results. This calendar includes stadium information, match descriptions, and links to match details.
+A subscription-based .ics calendar of Scotland National Team fixtures and results, including country flag emojis, stadium details, match descriptions, and links to match information.
 
 Subscribe once and updates will sync automatically.
 
