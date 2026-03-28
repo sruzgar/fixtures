@@ -1,0 +1,32 @@
+name: Update Scotland Scores
+
+on:
+  schedule:
+    # UTC times covering UK match hours (14:00–22:45 UK time, BST/GMT)
+    - cron: "0,15,30,45 13-22 * * *"
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install ics requests
+
+      - name: Update scores
+        run: python update_scores.py
+
+      - name: Commit changes
+        run: |
+          git config user.name "score-bot"
+          git config user.email "bot@example.com"
+          git add scotland.ics
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update scores"
+          git push
