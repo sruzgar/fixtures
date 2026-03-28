@@ -1,5 +1,6 @@
 import requests
-from datetime import datetime, timezone
+from datetime import datetime
+from zoneinfo import ZoneInfo
 from ics import Calendar
 
 TEAM_ID = 8498  # Scotland in FotMob
@@ -16,7 +17,7 @@ def get_matches():
             continue
 
         matches.append({
-            "date": datetime.fromtimestamp(status["utcTimeStamp"], tz=timezone.utc).date(),
+            "date": datetime.fromtimestamp(status["utcTimeStamp"]).date(),
             "score": f'{m["result"]["homeScore"]}-{m["result"]["awayScore"]}'
         })
 
@@ -26,8 +27,10 @@ def main():
     with open("scotland.ics", "r") as f:
         cal = Calendar(f.read())
 
+    # UK local time
+    today = datetime.now(ZoneInfo("Europe/London")).date()
+
     matches = get_matches()
-    today = datetime.now(timezone.utc).date()
     matches_today = [m for m in matches if m["date"] == today]
 
     if not matches_today:
