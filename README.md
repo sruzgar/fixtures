@@ -21,6 +21,11 @@ https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics
 [![Outlook Logo](https://github.com/sruzgar/fixtures/blob/main/icons/outlook.png)](webcal://https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics "Outlook")
 
 
+<a href="https://example.com" target="_blank">
+  <img src="[image.jpg](https://github.com/sruzgar/fixtures/blob/main/icons/outlook.png)" alt="Outlook" width="20" height="20">
+</a>
+
+
 
 
 
