@@ -28,7 +28,11 @@ https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics
             <img src="https://github.com/sruzgar/fixtures/blob/main/icons/apple.png" alt="Apple" width="30">
           </a>
       </td>
-      <td>&nbsp;</td>
+       <td>
+          <a href="https://www.google.com/calendar/render?cid=webcal://https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics " target="_blank">
+            <img src="https://github.com/sruzgar/fixtures/blob/main/icons/google.png" alt="Google" width="30">
+          </a>
+      </td>
        <td>
           <a href="webcal://https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics" target="_blank">
             <img src="https://github.com/sruzgar/fixtures/blob/main/icons/outlook.png" alt="Outlook" width="30">
@@ -36,9 +40,9 @@ https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics
       </td>
 </tr>
 <tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
+<td>Apple</td>
+<td>Gogole</td>
+<td>Outlook</td>
 </tr>
 </tbody>
 </table>
