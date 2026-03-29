@@ -10,11 +10,7 @@ Subscribe once and updates will sync automatically.
 ------------------------------------------------------------------------
 
 ## 📅 Subscribe
-
-**Raw calendar URL (for Google / Outlook / manual use):**
-
-https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics
-
+Sync Start's fixtures to your favorite calendar app.
 
 <table border="0">
   <tbody>
@@ -42,6 +38,9 @@ https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics
     </tr>
   </tbody>
 </table>
+
+**Raw calendar URL (for Google / Outlook / manual use):**
+https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics
 
 ------------------------------------------------------------------------
 
