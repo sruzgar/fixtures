@@ -34,13 +34,13 @@ https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics
             <img src="https://github.com/sruzgar/fixtures/blob/main/icons/outlook.png" alt="Outlook" width="30">
           </a>
       </td>
-</tr>
-<tr>
-<td>Apple</td>
-<td>Gogole</td>
-<td>Outlook</td>
-</tr>
-</tbody>
+    </tr>
+    <tr>
+      <td>Apple</td>
+      <td>Gogole</td>
+      <td>Outlook</td>
+    </tr>
+  </tbody>
 </table>
 
 ------------------------------------------------------------------------
