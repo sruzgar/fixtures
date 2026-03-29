@@ -16,6 +16,7 @@ Subscribe once and updates will sync automatically.
 https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics
 
 [![Apple] Logo](icons/apple.png)](webcal://https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics "Apple")
+[![The Octocat logo](https://octodex.github.com/images/bannekat.png)](https://github.com "Visit the GitHub website")
 
 
 
