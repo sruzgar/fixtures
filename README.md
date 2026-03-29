@@ -22,7 +22,7 @@ https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics
 
 
 <a href="https://example.com" target="_blank">
-  <img src="[https://github.com/sruzgar/fixtures/blob/main/icons/outlook.png"] alt="Outlook" width="20" height="20">
+  <img src="https://github.com/sruzgar/fixtures/blob/main/icons/outlook.png" alt="Outlook" width="20" height="20">
 </a>
 
 
