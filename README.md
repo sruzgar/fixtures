@@ -20,10 +20,24 @@ https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics
 [![Google Logo](https://github.com/sruzgar/fixtures/blob/main/icons/google.png)](https://www.google.com/calendar/render?cid=webcal://https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics "Google")
 [![Outlook Logo](https://github.com/sruzgar/fixtures/blob/main/icons/outlook.png)](webcal://https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics "Outlook")
 
-
-<a href="https://example.com" target="_blank">
-  <img src="https://github.com/sruzgar/fixtures/blob/main/icons/outlook.png" alt="Outlook" width="30">
-</a>
+<table>
+  <tbody>
+    <tr>
+      <td>
+          <a href="webcal://https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics" target="_blank">
+            <img src="https://github.com/sruzgar/fixtures/blob/main/icons/outlook.png" alt="Outlook" width="30">
+          </a>
+      </td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
 
 
 
