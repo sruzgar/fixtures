@@ -10,7 +10,7 @@ Subscribe once and updates will sync automatically.
 ------------------------------------------------------------------------
 
 ## 📅 Subscribe
-Sync Start's fixtures to your favorite calendar app.
+Sync fixtures to your favorite calendar app.
 
 <table border="0">
   <tbody>
@@ -37,6 +37,29 @@ Sync Start's fixtures to your favorite calendar app.
       <td>Outlook</td>
     </tr>
   </tbody>
+</table>
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="webcal://https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics">
+        <img src="https://github.com/sruzgar/fixtures/blob/main/icons/apple.png" width="30"><br>
+        Apple
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://www.google.com/calendar/render?cid=webcal://https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics">
+        <img src="https://github.com/sruzgar/fixtures/blob/main/icons/google.png" width="30"><br>
+        Google
+      </a>
+    </td>
+    <td align="center">
+      <a href="webcal://https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics">
+        <img src="https://github.com/sruzgar/fixtures/blob/main/icons/outlook.png" width="30"><br>
+        Outlook
+      </a>
+    </td>
+  </tr>
 </table>
 
 **Raw calendar URL (for Google / Outlook / manual use):**
