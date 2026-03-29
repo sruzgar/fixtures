@@ -17,7 +17,8 @@ https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics
 
 
 [![Apple Logo](https://github.com/sruzgar/fixtures/blob/main/icons/apple.png)](webcal://https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics "Apple")
-[![Google Logo](https://github.com/sruzgar/fixtures/blob/main/icons/Google.png)](https://www.google.com/calendar/render?cid=webcal://https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics "Google")
+[![Google Logo](https://github.com/sruzgar/fixtures/blob/main/icons/google.png)](https://www.google.com/calendar/render?cid=webcal://https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics "Google")
+[![Outlook Logo](https://github.com/sruzgar/fixtures/blob/main/icons/outlook.png)](webcal://https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics "Outlook")
 
 
 
