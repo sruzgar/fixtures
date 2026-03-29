@@ -40,6 +40,7 @@
         border-radius: 24px;
         box-shadow: var(--shadow);
         padding: 28px;
+        -webkit-tap-highlight-color: transparent;
       }
 
       .eyebrow {
@@ -88,6 +89,9 @@
         background: #fff;
         transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
         min-height: 120px;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        touch-action: manipulation;
       }
 
       .btn:hover {
@@ -130,8 +134,10 @@
       }
 
       @media (max-width: 640px) {
-        .card { padding: 22px; }
+        .card { padding: 22px; border-radius: 20px; }
         .actions { grid-template-columns: 1fr; }
+        .btn { min-height: 96px; }
+        h1 { font-size: 32px; }
       }
     </style>
   </head>
@@ -147,23 +153,16 @@
 
         <div class="actions">
           <a class="btn" href="webcal://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics">
-            <img src="https://github.com/sruzgar/fixtures/blob/main/icons/apple.png" alt="Apple Calendar" />
+            <img src="https://raw.githubusercontent.com/sruzgar/fixtures/main/icons/apple.png" alt="Apple Calendar" />
             <span>Apple Calendar</span>
           </a>
 
           <a class="btn" href="https://www.google.com/calendar/render?cid=https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics" target="_blank" rel="noreferrer">
-            <img src="https://github.com/sruzgar/fixtures/blob/main/icons/google.png" alt="Google Calendar" />
-            <span>Google Calendar</span>
+            <img src="https://raw.githubusercontent.com/sruzgar/fixtures/main/icons/google.pngspan>
           </a>
 
           <a class="btn" href="webcal://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics">
-            <img src="https://github.com/sruzgar/fixtures/blob/main/icons/outlook.png" alt="Outlook" />
-            <span>Outlook</span>
-          </a>
-        </div>
-
-        <div class="hint">
-          On iPhone, tap <strong>Apple Calendar</strong>. If it opens in the browser, copy the link and open it in Safari, then tap the subscribe prompt.
+            <img src="https://github.com/sruzgar/fixtures/blob/main/icons/outlook.pnhttps://raw.githubusercontent.com/sruzgar/fixtures/main/icons/outlook.pnghone, tap <strong>Apple Calendar</strong>. If it opens in the browser, copy the link and open it in Safari, then tap the subscribe prompt.
         </div>
 
         <div class="footer">
