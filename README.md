@@ -15,7 +15,12 @@ Subscribe once and updates will sync automatically.
 
 https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics
 
-iPhone webcal://https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics
+[![Apple] Logo](icons/apple.png)](webcal://https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics "Apple")
+
+
+
+
+iPhone 
 Android: https://www.google.com/calendar/render?cid=webcal://https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics
 
 ------------------------------------------------------------------------
