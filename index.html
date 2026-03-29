@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Scotland Fixtures</title>
     <meta name="description" content="Subscribe to Scotland National Team fixtures and results in your calendar." />
+
     <style>
       :root {
         color-scheme: light;
@@ -155,6 +156,7 @@
       }
     </style>
   </head>
+
   <body>
     <main class="wrap">
       <section class="card" aria-labelledby="title">
@@ -166,17 +168,22 @@
         </p>
 
         <div class="actions">
-          <a class="btn" href="https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics">
+          <!-- Apple -->
+          <a class="btn" href="webcal://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics">
             <img src="https://raw.githubusercontent.com/sruzgar/fixtures/main/icons/apple.png" alt="Apple Calendar" />
             <span>Apple Calendar</span>
           </a>
 
-          <a class="btn" href="https://www.google.com/calendar/render?cid=https%3A%2F%2Fraw.githubusercontent.com%2Fsruzgar%2Ffixtures%2Fmain%2Fscotland.ics" target="_blank" rel="noopener noreferrer">
+          <!-- Google -->
+          <a class="btn"
+             href="https://www.google.com/calendar/render?cid=https%3A%2F%2Fraw.githubusercontent.com%2Fsruzgar%2Ffixtures%2Fmain%2Fscotland.ics"
+             target="_blank" rel="noopener noreferrer">
             <img src="https://raw.githubusercontent.com/sruzgar/fixtures/main/icons/google.png" alt="Google Calendar" />
             <span>Google Calendar</span>
           </a>
 
-          <a class="btn" href="https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics">
+          <!-- Outlook -->
+          <a class="btn" href="webcal://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics">
             <img src="https://raw.githubusercontent.com/sruzgar/fixtures/main/icons/outlook.png" alt="Outlook" />
             <span>Outlook</span>
           </a>
@@ -192,5 +199,19 @@
         </div>
       </section>
     </main>
+
+    <!-- iOS FIX -->
+    <script>
+      document.querySelectorAll('.btn').forEach(link => {
+        link.addEventListener('click', function(e) {
+          const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+          if (isIOS && this.href.startsWith('webcal://')) {
+            e.preventDefault();
+            window.location.href = this.href;
+          }
+        });
+      });
+    </script>
   </body>
 </html>
