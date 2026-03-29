@@ -16,7 +16,7 @@ Subscribe once and updates will sync automatically.
 https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics
 
 [![Apple] Logo](icons/apple.png)]( "Apple")
-[![TApple] Logo](icons/apple.png)](webcal://https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics "Apple")
+[![TApple] Logo](https://github.com/sruzgar/fixtures/blob/main/icons/apple.png)](webcal://https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics "Apple")
 
 
 
