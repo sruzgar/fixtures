@@ -6,6 +6,9 @@
     <title>Scotland National Football Team Fixtures</title>
     <meta name="description" content="Subscribe to Scotland National Team fixtures and results in your calendar." />
 
+    <!-- Favicon -->
+    <link rel="icon" href="https://raw.githubusercontent.com/sruzgar/fixtures/main/icons/favicon.ico" />
+
     <style>
       :root {
         color-scheme: light;
@@ -69,11 +72,19 @@
         line-height: 1.6;
       }
 
+      /* Buttons container */
       .actions {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        grid-template-columns: 1fr; /* stacked by default (mobile) */
         gap: 14px;
         margin-top: 26px;
+      }
+
+      /* Side-by-side on larger screens */
+      @media (min-width: 600px) {
+        .actions {
+          grid-template-columns: repeat(2, 1fr);
+        }
       }
 
       .btn {
@@ -131,7 +142,21 @@
         background: #e8f2fb;
         border-left-color: #0065bd;
         color: #10233f;
-        word-break: break-all;
+        word-break: break-word;
+        overflow-wrap: anywhere;
+      }
+
+      .download-link {
+        display: inline-block;
+        font-weight: 600;
+        color: var(--accent);
+        text-decoration: none;
+        border-bottom: 2px solid rgba(0, 101, 189, 0.2);
+        padding-bottom: 2px;
+      }
+
+      .download-link:active {
+        opacity: 0.7;
       }
 
       code {
@@ -200,9 +225,15 @@
         </div>
 
         <div class="hint blue">
-          If your calendar app does not open directly, use the raw ICS link:  
-          <a href="https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics" target="_blank">
-            https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics
+          If your calendar app does not open directly, download the calendar file:  
+          <br /><br />
+          <a 
+            class="download-link"
+            href="https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics"
+            target="_blank"
+            rel="noopener noreferrer"
+            download="scotland-fixtures.ics">
+            Download Scotland fixtures (.ics)
           </a>
         </div>
 
@@ -212,7 +243,8 @@
     <script>
       document.querySelectorAll('.btn').forEach(link => {
         link.addEventListener('click', function(e) {
-          const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+          const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent) 
+            || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
 
           if (isIOS && this.href.startsWith('webcal://')) {
             e.preventDefault();
