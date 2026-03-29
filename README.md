@@ -33,7 +33,7 @@ Sync fixtures to your favorite calendar app.
     </tr>
     <tr>
       <td>Apple</td>
-      <td>Gogole</td>
+      <td>Google</td>
       <td>Outlook</td>
     </tr>
   </tbody>
