@@ -42,25 +42,26 @@ Sync fixtures to your favorite calendar app.
 <table>
   <tr>
     <td align="center">
-      <a href="webcal://https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics">
-        <img src="https://github.com/sruzgar/fixtures/blob/main/icons/apple.png" width="30"><br>
+      <a href="https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics">
+        <img src="https://github.com/sruzgar/fixtures/blob/main/icons/apple.png" width="30" alt="Apple"><br>
         <sub>Apple</sub>
       </a>
     </td>
     <td align="center">
-      <a href="https://www.google.com/calendar/render?cid=webcal://https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics">
-        <img src="https://github.com/sruzgar/fixtures/blob/main/icons/google.png" width="30"><br>
+      <a href="https://www.google.com/calendar/render?cid=https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics">
+        <img src="https://github.com/sruzgar/fixtures/blob/main/icons/google.png" width="30" alt="Google"><br>
         <sub>Google</sub>
       </a>
     </td>
     <td align="center">
-      <a href="webcal://https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics">
-        <img src="https://github.com/sruzgar/fixtures/blob/main/icons/outlook.png" width="30"><br>
+      <a href="https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics">
+        <img src="https://github.com/sruzgar/fixtures/blob/main/icons/outlook.png" width="30" alt="Outlook"><br>
         <sub>Outlook</sub>
       </a>
     </td>
   </tr>
 </table>
+webcal://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics
 **Raw calendar URL (for Google / Outlook / manual use):**
 https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics
 
