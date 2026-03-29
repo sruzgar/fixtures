@@ -63,7 +63,7 @@ Sync fixtures to your favorite calendar app.
 </table>
 
 **Raw calendar URL (for Google / Outlook / manual use):**
-https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics
+<a href="https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics">test</A>
 
 webcal://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics
 
