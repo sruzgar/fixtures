@@ -41,19 +41,19 @@ Sync fixtures to your favorite calendar app.
 
 <table>
   <tr>
-    <td align="center">
+    <td align="center" border="0">
       <a href="webcal://https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics">
         <img src="https://github.com/sruzgar/fixtures/blob/main/icons/apple.png" width="30"><br>
         Apple
       </a>
     </td>
-    <td align="center">
+    <td align="center" border="0">
       <a href="https://www.google.com/calendar/render?cid=webcal://https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics">
         <img src="https://github.com/sruzgar/fixtures/blob/main/icons/google.png" width="30"><br>
         Google
       </a>
     </td>
-    <td align="center">
+    <td align="center" border="0">
       <a href="webcal://https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics">
         <img src="https://github.com/sruzgar/fixtures/blob/main/icons/outlook.png" width="30"><br>
         Outlook
