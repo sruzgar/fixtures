@@ -15,6 +15,9 @@ Subscribe once and updates will sync automatically.
 
 https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics
 
+iPhone webcal://https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics
+Android: https://www.google.com/calendar/render?cid=webcal://https://raw.githubusercontent.com/sruzgar/fixtures/main/scotland.ics
+
 ------------------------------------------------------------------------
 
 ## 📱 iPhone (Apple Calendar)
