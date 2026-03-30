@@ -45,21 +45,27 @@
         border-radius: 24px;
         box-shadow: var(--shadow);
         padding: 28px;
-        position: relative;
+        position: relative; /* needed for absolute eyebrow */
       }
 
-      /* Full-width header like table row */
+      /* Full-width header spanning the card */
       .eyebrow {
-        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
         text-align: center;
         padding: 12px 0;
-        border-radius: 12px 12px 0 0;
+        border-radius: 24px 24px 0 0; /* match card top corners */
         background: var(--accent);
         color: #fff;
         font-weight: 700;
         font-size: 16px;
-        margin: -28px -28px 16px -28px; /* stretch to card edges */
+      }
+
+      /* Add spacing inside the card to account for eyebrow */
+      .card-content {
+        padding-top: 48px; /* enough to push content below eyebrow */
       }
 
       h1 {
@@ -190,50 +196,51 @@
     <main class="wrap">
       <section class="card">
         <div class="eyebrow">🏴 Scotland National Football Team</div>
-        <h1>Subscribe to fixtures and results</h1>
-        <p>
-          Add Scotland National Football Team fixtures to your calendar with match details, result updates, stadium information and country flag emojis.
-        </p>
+        <div class="card-content">
+          <h1>Subscribe to fixtures and results</h1>
+          <p>
+            Add Scotland National Football Team fixtures to your calendar with match details, result updates, stadium information and country flag emojis.
+          </p>
 
-        <div class="actions">
+          <div class="actions">
 
-          <!-- Apple -->
-          <a class="btn" href="webcal://sruzgar.github.io/fixtures/scotland.ics">
-            <img src="https://sruzgar.github.io/fixtures/icons/apple.png" alt="Add to Apple Calendar" />
-            <span>Apple Calendar</span>
-          </a>
+            <!-- Apple -->
+            <a class="btn" href="webcal://sruzgar.github.io/fixtures/scotland.ics">
+              <img src="https://sruzgar.github.io/fixtures/icons/apple.png" alt="Add to Apple Calendar" />
+              <span>Apple Calendar</span>
+            </a>
 
-          <!-- Google -->
-          <a class="btn"
-             href="https://www.google.com/calendar/render?cid=webcal://sruzgar.github.io/fixtures/scotland.ics"
-             target="_blank" rel="noopener noreferrer">
-            <img src="https://sruzgar.github.io/fixtures/icons/google.png" alt="Add to Google Calendar" />
-            <span>Google Calendar</span>
-          </a>
+            <!-- Google -->
+            <a class="btn"
+               href="https://www.google.com/calendar/render?cid=webcal://sruzgar.github.io/fixtures/scotland.ics"
+               target="_blank" rel="noopener noreferrer">
+              <img src="https://sruzgar.github.io/fixtures/icons/google.png" alt="Add to Google Calendar" />
+              <span>Google Calendar</span>
+            </a>
 
-          <!-- Outlook Web -->
-          <a class="btn"
-             href="https://outlook.office.com/owa/?rru=addsubscription&name=Scotland+National+Team&url=webcal://sruzgar.github.io/fixtures/scotland.ics"
-             target="_blank" rel="noopener noreferrer">
-            <img src="https://sruzgar.github.io/fixtures/icons/outlook.png" alt="Add to Outlook Calendar" />
-            <span>Outlook</span>
-          </a>
+            <!-- Outlook Web -->
+            <a class="btn"
+               href="https://outlook.office.com/owa/?rru=addsubscription&name=Scotland+National+Team&url=webcal://sruzgar.github.io/fixtures/scotland.ics"
+               target="_blank" rel="noopener noreferrer">
+              <img src="https://sruzgar.github.io/fixtures/icons/outlook.png" alt="Add to Outlook Calendar" />
+              <span>Outlook</span>
+            </a>
 
+          </div>
+
+          <div class="hint blue">
+            If your calendar app does not open directly, download the calendar file:  
+            <br /><br />
+            <a 
+              class="download-link"
+              href="https://sruzgar.github.io/fixtures/scotland.ics"
+              target="_blank"
+              rel="noopener noreferrer"
+              download="scotland-fixtures.ics">
+              Download Scotland fixtures (.ics)
+            </a>
+          </div>
         </div>
-
-        <div class="hint blue">
-          If your calendar app does not open directly, download the calendar file:  
-          <br /><br />
-          <a 
-            class="download-link"
-            href="https://sruzgar.github.io/fixtures/scotland.ics"
-            target="_blank"
-            rel="noopener noreferrer"
-            download="scotland-fixtures.ics">
-            Download Scotland fixtures (.ics)
-          </a>
-        </div>
-
       </section>
     </main>
 
