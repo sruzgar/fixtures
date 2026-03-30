@@ -81,7 +81,7 @@
       padding: 28px;
       position: relative;
       z-index: 1;
-      margin-top: -1px;
+      margin-top: -2px;
     }
 
     h1 {
@@ -199,6 +199,18 @@
       color: var(--muted);
       font-size: 13px;
       line-height: 1.6;
+      padding: 0 16px;
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 0.3s ease, padding 0.3s ease;
+    }
+
+    .download-section .download-content > div {
+      overflow: hidden;
+    }
+
+    .download-section details[open] .download-content {
+      grid-template-rows: 1fr;
       padding: 10px 16px 14px 16px;
     }
 
@@ -371,8 +383,11 @@
       }
 
       .download-section .download-content {
-        padding: 8px 14px 12px 14px;
         font-size: 12px;
+      }
+
+      .download-section details[open] .download-content {
+        padding: 8px 14px 12px 14px;
       }
 
       footer {
@@ -386,7 +401,7 @@
 
 <body>
   <main class="wrap">
-    <div class="eyebrow">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland National Football Team 3</div>
+    <div class="eyebrow">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland National Football Team 4</div>
 
     <section class="card">
       <h1>Subscribe to fixtures & results</h1>
@@ -433,13 +448,15 @@
         <details>
           <summary>Having trouble subscribing?</summary>
           <div class="download-content">
-            If your calendar app does not open, you can download the calendar file directly:
-            <br /><br />
-            <a class="download-link"
-               href="https://fixtures.eh30.net/calendars/scotland.ics"
-               download>
-               Download Scotland fixtures (.ics)
-            </a>
+            <div>
+              If your calendar app does not open, you can download the calendar file directly:
+              <br /><br />
+              <a class="download-link"
+                 href="https://fixtures.eh30.net/calendars/scotland.ics"
+                 download>
+                 Download Scotland fixtures (.ics)
+              </a>
+            </div>
           </div>
         </details>
       </div>
