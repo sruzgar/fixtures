@@ -23,23 +23,19 @@
     * { box-sizing: border-box; }
 
     html, body {
-      height: 100vh; 
       margin: 0;
       padding: 0;
     }
 
     body {
-      min-height: 100dvh;
-      min-height: -webkit-fill-available; /* iOS fallback */
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       background: url('media/IMG_7632.png') no-repeat center center;
       background-size: cover;
+      background-position: center 40%; /* centers the grass “midfield” */
       color: var(--text);
     }
 
     .wrap {
-      min-height: 100dvh;
-      min-height: -webkit-fill-available;
       display: grid;
       place-items: center;
       padding: 24px;
@@ -176,7 +172,7 @@
 
 <body>
   <main class="wrap">
-    <div class="eyebrow">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland National Football Team</div>
+    <div class="eyebrow">🏴 Scotland National Football Team</div>
 
     <section class="card">
       <h1>Subscribe to fixtures & results</h1>
@@ -217,5 +213,17 @@
       </div>
     </section>
   </main>
+
+  <script>
+    // iOS Safari safe full-height fix
+    function setFullHeight() {
+      const vh = window.innerHeight;
+      document.body.style.minHeight = vh + "px";
+      document.querySelector('.wrap').style.minHeight = vh + "px";
+    }
+    setFullHeight();
+    window.addEventListener('resize', setFullHeight);
+    window.addEventListener('orientationchange', setFullHeight);
+  </script>
 </body>
 </html>
