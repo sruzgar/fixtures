@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendar Click Test</title>
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YZCBNTH327"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-YZCBNTH327');
+  </script>
+
+  <style>
+    body { font-family: sans-serif; display: flex; flex-direction: column; align-items: center; padding: 50px; background: #f6f8fc; }
+    .btn { display: flex; align-items: center; gap: 10px; padding: 16px 24px; margin: 10px; border-radius: 12px; border: 1px solid #d8e0ea; text-decoration: none; color: #10233f; background: #fff; font-weight: 700; }
+    .btn img { width: 24px; height: 24px; }
+  </style>
+</head>
+<body>
+
+  <h1>Test Calendar Buttons</h1>
+
+  <!-- Apple Calendar -->
+  <a class="btn" href="webcal://fixtures.eh30.net/calendars/scotland.ics"
+     onclick="gtag('event','calendar_subscribe_click',{'calendar':'Apple'});">
+    <img src="https://fixtures.eh30.net/media/apple.png" alt="Apple Calendar">
+    Apple Calendar
+  </a>
+
+  <!-- Google Calendar -->
+  <a class="btn" href="https://www.google.com/calendar/render?cid=webcal://fixtures.eh30.net/calendars/scotland.ics"
+     target="_blank"
+     onclick="gtag('event','calendar_subscribe_click',{'calendar':'Google'});">
+    <img src="https://fixtures.eh30.net/media/google.png" alt="Google Calendar">
+    Google Calendar
+  </a>
+
+  <!-- Outlook Calendar -->
+  <a class="btn" href="https://outlook.office.com/owa/?rru=addsubscription&name=Scotland+National+Team&url=https://fixtures.eh30.net/calendars/scotland.ics"
+     target="_blank"
+     onclick="gtag('event','calendar_subscribe_click',{'calendar':'Outlook'});">
+    <img src="https://fixtures.eh30.net/media/outlook.png" alt="Outlook Calendar">
+    Outlook Calendar
+  </a>
+
+</body>
+</html>
