@@ -20,7 +20,6 @@
       }
 
       * { box-sizing: border-box; }
-
       body {
         margin: 0;
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -59,10 +58,7 @@
         font-size: 16px;
       }
 
-      .card-content {
-        padding-top: 48px;
-      }
-
+      .card-content { padding-top: 48px; }
       h1 {
         margin: 0 0 10px;
         font-size: clamp(18px, 4vw, 32px);
@@ -71,13 +67,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
       }
-
-      p {
-        margin: 0;
-        color: var(--muted);
-        font-size: 16px;
-        line-height: 1.6;
-      }
+      p { margin: 0; color: var(--muted); font-size: 16px; line-height: 1.6; }
 
       .actions {
         display: grid;
@@ -85,12 +75,7 @@
         gap: 14px;
         margin-top: 26px;
       }
-
-      @media (min-width: 800px) {
-        .actions {
-          grid-template-columns: repeat(2, 1fr);
-        }
-      }
+      @media (min-width: 800px) { .actions { grid-template-columns: repeat(2, 1fr); } }
 
       .btn {
         display: flex;
@@ -111,27 +96,10 @@
         touch-action: manipulation;
       }
 
-      .btn:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 8px 20px rgba(16, 35, 63, 0.08);
-        border-color: #b8c7d9;
-      }
-
-      .btn:active {
-        transform: scale(0.97);
-        box-shadow: 0 4px 12px rgba(16, 35, 63, 0.12);
-        background-color: var(--accent-2);
-      }
-
-      .btn img {
-        width: 36px;
-        height: 36px;
-      }
-
-      .btn span {
-        font-weight: 700;
-        font-size: 15px;
-      }
+      .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(16, 35, 63, 0.08); border-color: #b8c7d9; }
+      .btn:active { transform: scale(0.97); box-shadow: 0 4px 12px rgba(16, 35, 63, 0.12); background-color: var(--accent-2); }
+      .btn img { width: 36px; height: 36px; }
+      .btn span { font-weight: 700; font-size: 15px; }
 
       .hint.blue {
         margin-top: 18px;
@@ -153,13 +121,9 @@
         border-bottom: 2px solid rgba(12, 26, 49, 0.2);
         padding-bottom: 2px;
       }
-
       .download-link:active { opacity: 0.7; }
 
-      @media (max-width: 768px) {
-        .card { padding: 22px; border-radius: 20px; }
-        .btn { min-height: 96px; }
-      }
+      @media (max-width: 768px) { .card { padding: 22px; border-radius: 20px; } .btn { min-height: 96px; } }
     </style>
   </head>
 
@@ -167,63 +131,60 @@
     <main class="wrap" id="teams"></main>
 
     <script>
-      // Load teams from JSON
-      fetch('teams.json')
-        .then(res => res.json())
-        .then(teams => {
-          const container = document.getElementById('teams');
+      // Inline team data (works in Safari iPhone)
+      const teams = [
+        { "name":"Scotland","short":"scotland","calendar":"calendars/scotland.ics","color":"#0c1a31","emoji":"🏴" },
+        { "name":"England","short":"england","calendar":"calendars/england.ics","color":"#d40000","emoji":"🏴" }
+      ];
 
-          teams.forEach(team => {
-            const card = document.createElement('section');
-            card.className = 'card';
-            card.innerHTML = `
-              <div class="eyebrow" style="background:${team.color}">${team.emoji} ${team.name} National Football Team</div>
-              <div class="card-content">
-                <h1>Subscribe to fixtures & results</h1>
-                <p>Sync ${team.name} National Football Team fixtures to your calendar with the latest scores, match details, stadium info, and country flag emojis.</p>
-                <div class="actions">
-                  <a class="btn" style="border-color:${team.color}" href="webcal://${team.calendar}">
-                    <img src="https://fixtures.eh30.net/media/apple.png" alt="Add to Apple Calendar" />
-                    <span>Apple Calendar</span>
-                  </a>
-                  <a class="btn" style="border-color:${team.color}" href="https://www.google.com/calendar/render?cid=webcal://${team.calendar}" target="_blank" rel="noopener noreferrer">
-                    <img src="https://fixtures.eh30.net/media/google.png" alt="Add to Google Calendar" />
-                    <span>Google Calendar</span>
-                  </a>
-                  <a class="btn" style="border-color:${team.color}" href="https://outlook.office.com/owa/?rru=addsubscription&name=${encodeURIComponent(team.name+' National Team')}&url=https://${team.calendar}" target="_blank" rel="noopener noreferrer">
-                    <img src="https://fixtures.eh30.net/media/outlook.png" alt="Add to Outlook Calendar" />
-                    <span>Outlook</span>
-                  </a>
-                </div>
-                <div class="hint blue">
-                  If your calendar app does not open directly, download the calendar file:  
-                  <br /><br />
-                  <a class="download-link" href="${team.calendar}" target="_blank" rel="noopener noreferrer" download="${team.short}-fixtures.ics">
-                    Download ${team.name} fixtures (.ics)
-                  </a>
-                </div>
-              </div>
-            `;
-            container.appendChild(card);
-          });
+      const container = document.getElementById('teams');
 
-          // iOS Webcal handling
-          document.querySelectorAll('.btn').forEach(link => {
-            link.addEventListener('click', function(e) {
-              const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent) 
-                || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+      teams.forEach(team => {
+        const card = document.createElement('section');
+        card.className = 'card';
+        card.innerHTML = `
+          <div class="eyebrow" style="background:${team.color}">${team.emoji} ${team.name} National Football Team</div>
+          <div class="card-content">
+            <h1>Subscribe to fixtures & results</h1>
+            <p>Sync ${team.name} National Football Team fixtures to your calendar with the latest scores, match details, stadium info, and country flag emojis.</p>
+            <div class="actions">
+              <a class="btn" style="border-color:${team.color}" href="webcal://${team.calendar}">
+                <img src="https://fixtures.eh30.net/media/apple.png" alt="Add to Apple Calendar" />
+                <span>Apple Calendar</span>
+              </a>
+              <a class="btn" style="border-color:${team.color}" href="https://www.google.com/calendar/render?cid=webcal://${team.calendar}" target="_blank" rel="noopener noreferrer">
+                <img src="https://fixtures.eh30.net/media/google.png" alt="Add to Google Calendar" />
+                <span>Google Calendar</span>
+              </a>
+              <a class="btn" style="border-color:${team.color}" href="https://outlook.office.com/owa/?rru=addsubscription&name=${encodeURIComponent(team.name+' National Team')}&url=https://${team.calendar}" target="_blank" rel="noopener noreferrer">
+                <img src="https://fixtures.eh30.net/media/outlook.png" alt="Add to Outlook Calendar" />
+                <span>Outlook</span>
+              </a>
+            </div>
+            <div class="hint blue">
+              If your calendar app does not open directly, download the calendar file:  
+              <br /><br />
+              <a class="download-link" href="${team.calendar}" target="_blank" rel="noopener noreferrer" download="${team.short}-fixtures.ics">
+                Download ${team.name} fixtures (.ics)
+              </a>
+            </div>
+          </div>
+        `;
+        container.appendChild(card);
+      });
 
-              if (isIOS && this.href.startsWith('webcal://')) {
-                e.preventDefault();
-                window.location.href = this.href;
-                setTimeout(() => {
-                  window.location.href = this.href.replace('webcal://', 'https://');
-                }, 1500);
-              }
-            });
-          });
-
+      // iOS Webcal handling
+      document.querySelectorAll('.btn').forEach(link => {
+        link.addEventListener('click', function(e) {
+          const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent) 
+            || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+          if (isIOS && this.href.startsWith('webcal://')) {
+            e.preventDefault();
+            window.location.href = this.href;
+            setTimeout(() => { window.location.href = this.href.replace('webcal://', 'https://'); }, 1500);
+          }
         });
+      });
     </script>
   </body>
 </html>
