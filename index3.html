@@ -174,6 +174,11 @@
       background: linear-gradient(135deg, var(--accent-2) 0%, #ffffff 100%);
       border-radius: 12px;
       border: 1px solid var(--border);
+      display: none;
+    }
+
+    .next-match.loaded {
+      display: block;
     }
 
     .next-match-label {
@@ -323,9 +328,9 @@
         <div class="next-match-label">Next Match</div>
         <div class="match-details">
           <div class="match-info">
-            <div class="match-opponent">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland vs Poland 🇵🇱</div>
-            <div class="match-date">Thursday, 5 June 2026 • 19:45 GMT</div>
-            <div class="match-competition">World Cup 2026 Qualifier</div>
+            <div class="match-opponent"></div>
+            <div class="match-date"></div>
+            <div class="match-competition"></div>
           </div>
         </div>
       </div>
@@ -365,15 +370,8 @@
     </section>
 
     <footer>
-      <div>
-        Fixtures automatically updated from official sources
-      </div>
-      <div class="footer-divider">•</div>
-      <div>
-        <a href="https://www.scottishfa.co.uk/scotland-national-team/" target="_blank" rel="noopener">Scottish FA</a>
-        •
-        Last updated: March 2026
-      </div>
+      <a href="https://www.scottishfa.co.uk/" target="_blank" rel="noopener">Scottish FA</a>
+      • Last updated: March 2026
     </footer>
   </main>
 
@@ -471,6 +469,7 @@
     }
 
     function updateMatchDisplay(match) {
+      const nextMatchEl = document.querySelector('.next-match');
       const opponentEl = document.querySelector('.match-opponent');
       const dateEl = document.querySelector('.match-date');
       const competitionEl = document.querySelector('.match-competition');
@@ -501,6 +500,11 @@
         // Extract venue name (first line before \n)
         const venueName = match.location.split('\\n')[0].replace(/\\,/g, ',');
         competitionEl.textContent = venueName;
+      }
+
+      // Show the next match section once data is loaded
+      if (nextMatchEl) {
+        nextMatchEl.classList.add('loaded');
       }
     }
 
