@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calendar Click Test</title>
+  <title>GA4 Calendar Test</title>
 
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YZCBNTH327"></script>
@@ -22,27 +22,35 @@
 </head>
 <body>
 
-  <h1>Test Calendar Buttons</h1>
+  <h1>GA4 Calendar Click Test</h1>
 
   <!-- Apple Calendar -->
   <a class="btn" href="#"
-     onclick="gtag('event','calendar_subscribe_click',{'calendar':'Apple'}); alert('Apple Calendar click sent!');">
+     onclick="event.preventDefault(); gtag('event','calendar_subscribe_click',{'calendar':'Apple'}); alert('Apple Calendar click sent!');">
     <img src="https://fixtures.eh30.net/media/apple.png" alt="Apple Calendar">
     Apple Calendar
   </a>
 
   <!-- Google Calendar -->
   <a class="btn" href="#"
-     onclick="gtag('event','calendar_subscribe_click',{'calendar':'Google'}); alert('Google Calendar click sent!');">
+     onclick="event.preventDefault(); gtag('event','calendar_subscribe_click',{'calendar':'Google'}); alert('Google Calendar click sent!');">
     <img src="https://fixtures.eh30.net/media/google.png" alt="Google Calendar">
     Google Calendar
   </a>
 
   <!-- Outlook Calendar -->
   <a class="btn" href="#"
-     onclick="gtag('event','calendar_subscribe_click',{'calendar':'Outlook'}); alert('Outlook Calendar click sent!');">
+     onclick="event.preventDefault(); gtag('event','calendar_subscribe_click',{'calendar':'Outlook'}); alert('Outlook Calendar click sent!');">
     <img src="https://fixtures.eh30.net/media/outlook.png" alt="Outlook Calendar">
     Outlook Calendar
+  </a>
+
+  <!-- ICS Download -->
+  <a class="btn" href="https://fixtures.eh30.net/calendars/scotland.ics"
+     download
+     onclick="gtag('event','calendar_download',{'calendar':'Scotland'}); alert('ICS download event sent!');">
+    <img src="https://fixtures.eh30.net/media/download.png" alt="Download ICS">
+    Download ICS
   </a>
 
 </body>
