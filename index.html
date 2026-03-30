@@ -1,12 +1,25 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Scotland National Football Team Fixtures</title>
-  <meta name="description" content="Subscribe to Scotland National Team fixtures & results in your calendar." />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Scotland National Football Team Fixtures</title>
+    <meta name="description" content="Subscribe to Scotland National Football Team fixtures and results. Get automatic calendar updates for all matches with scores, venues, and match details for Apple Calendar, Google Calendar, and Outlook." />
 
-  <link rel="icon" href="https://fixtures.eh30.net/favicon.ico" />
+    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://fixtures.eh30.net/" />
+    <meta property="og:title" content="Scotland National Team Fixtures - Subscribe to Your Calendar" />
+    <meta property="og:description" content="Never miss a Scotland match. Subscribe to fixtures & results with scores, stadium info, and automatic updates to Apple, Google, or Outlook Calendar." />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Scotland National Team Fixtures" />
+    <meta name="twitter:description" content="Subscribe to Scotland fixtures & results in your calendar" />
+
+    <link rel="canonical" href="https://fixtures.eh30.net/" />
+    <link rel="icon" href="https://fixtures.eh30.net/favicon.ico" />
+    <link rel="preload" as="image" href="media/grass.png" />
 
   <style>
     :root {
@@ -29,9 +42,9 @@
 
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background: url('media/IMG_7632.png') no-repeat center center;
+      background: url('media/grass.png') no-repeat center center;
       background-size: cover;
-      background-position: center 40%; /* centers the grass “midfield” */
+      background-position: center 40%; /* centers the grass "midfield" */
       color: var(--text);
     }
 
@@ -183,21 +196,23 @@
 
       <div class="actions">
         <a class="btn" href="webcal://fixtures.eh30.net/calendars/scotland.ics">
-          <img src="https://fixtures.eh30.net/media/apple.png" />
+          <img src="https://fixtures.eh30.net/media/apple.png" alt="Apple Calendar icon" />
           <span>Apple Calendar</span>
         </a>
 
         <a class="btn"
            href="https://www.google.com/calendar/render?cid=webcal://fixtures.eh30.net/calendars/scotland.ics"
-           target="_blank">
-          <img src="https://fixtures.eh30.net/media/google.png" />
+           target="_blank"
+           rel="noopener">
+          <img src="https://fixtures.eh30.net/media/google.png" alt="Google Calendar icon" />
           <span>Google Calendar</span>
         </a>
 
         <a class="btn"
            href="https://outlook.office.com/calendar/addcalendar/?rru=addsubscription&name=Scotland+Fixtures&url=webcal%3A%2F%2Ffixtures.eh30.net%2Fcalendars%2Fscotland.ics"
-           target="_blank">
-          <img src="https://fixtures.eh30.net/media/outlook.png" />
+           target="_blank"
+           rel="noopener">
+          <img src="https://fixtures.eh30.net/media/outlook.png" alt="Outlook Calendar icon" />
           <span>Outlook Calendar</span>
         </a>
       </div>
@@ -214,6 +229,17 @@
     </section>
   </main>
 
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsTeam",
+      "name": "Scotland National Football Team",
+      "sport": "Soccer",
+      "url": "https://fixtures.eh30.net/",
+      "description": "Subscribe to Scotland National Team fixtures and results in your calendar"
+    }
+    </script>
+
   <script>
     // iOS Safari safe full-height fix
     function setFullHeight() {
@@ -227,3 +253,4 @@
   </script>
 </body>
 </html>
+any othr i
