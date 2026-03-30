@@ -6,19 +6,18 @@
     <title>Scotland National Football Team Fixtures</title>
     <meta name="description" content="Subscribe to Scotland National Team fixtures and results in your calendar." />
 
-    <!-- Favicon -->
     <link rel="icon" href="https://fixtures.eh30.net/favicon.ico" />
 
     <style>
       :root {
         color-scheme: light;
-        --bg: #f6f8fc;        /* page background */
-        --card: #ffffff;      /* card background */
-        --text: #10233f;      /* main text */
-        --muted: #5f6b7a;     /* muted text */
-        --border: #d8e0ea;    /* card border */
-        --accent: #0c1a31;    /* Scottish FA dark blue */
-        --accent-2: #e8f2fb;  /* lighter blue for badges/buttons */
+        --bg: #f6f8fc;
+        --card: #ffffff;
+        --text: #10233f;
+        --muted: #5f6b7a;
+        --border: #d8e0ea;
+        --accent: #0c1a31;
+        --accent-2: #e8f2fb;
         --shadow: 0 10px 30px rgba(16, 35, 63, 0.08);
       }
 
@@ -45,10 +44,9 @@
         border-radius: 24px;
         box-shadow: var(--shadow);
         padding: 28px;
-        position: relative; /* needed for absolute eyebrow */
+        position: relative;
       }
 
-      /* Full-width header spanning the card */
       .eyebrow {
         position: absolute;
         top: 0;
@@ -56,22 +54,25 @@
         width: 100%;
         text-align: center;
         padding: 12px 0;
-        border-radius: 24px 24px 0 0; /* match card top corners */
+        border-radius: 24px 24px 0 0;
         background: var(--accent);
         color: #fff;
         font-weight: 700;
         font-size: 16px;
       }
 
-      /* Add spacing inside the card to account for eyebrow */
       .card-content {
-        padding-top: 48px; /* enough to push content below eyebrow */
+        padding-top: 48px;
       }
 
+      /* ✅ UPDATED HEADING */
       h1 {
         margin: 0 0 10px;
-        font-size: clamp(20px, 5vw, 32px);
+        font-size: clamp(18px, 4vw, 32px);
         line-height: 1.1;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
 
       p {
@@ -81,7 +82,6 @@
         line-height: 1.6;
       }
 
-      /* Buttons container */
       .actions {
         display: grid;
         grid-template-columns: 1fr;
@@ -136,7 +136,6 @@
         font-size: 15px;
       }
 
-      /* Hint box with blue accent */
       .hint.blue {
         margin-top: 18px;
         padding: 14px 16px;
@@ -162,12 +161,6 @@
         opacity: 0.7;
       }
 
-      code {
-        background: #eef4fb;
-        padding: 2px 6px;
-        border-radius: 6px;
-      }
-
       .footer {
         margin-top: 18px;
         font-size: 13px;
@@ -184,10 +177,6 @@
         .btn {
           min-height: 96px;
         }
-
-        h1 {
-          font-size: 32px;
-        }
       }
     </style>
   </head>
@@ -196,21 +185,21 @@
     <main class="wrap">
       <section class="card">
         <div class="eyebrow">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland National Football Team</div>
+
         <div class="card-content">
           <h1>Subscribe to fixtures and results</h1>
+
           <p>
             Sync Scotland National Football Team fixtures to your calendar with the latest scores, match details, stadium info, and country flag emojis.
           </p>
 
           <div class="actions">
 
-            <!-- Apple -->
             <a class="btn" href="webcal://fixtures.eh30.net/caledars/scotland.ics">
               <img src="https://fixtures.eh30.net/media/apple.png" alt="Add to Apple Calendar" />
               <span>Apple Calendar</span>
             </a>
 
-            <!-- Google -->
             <a class="btn"
                href="https://www.google.com/calendar/render?cid=webcal://fixtures.eh30.net/caledars/scotland.ics"
                target="_blank" rel="noopener noreferrer">
@@ -218,7 +207,6 @@
               <span>Google Calendar</span>
             </a>
 
-            <!-- Outlook Web -->
             <a class="btn"
                href="https://outlook.office.com/owa/?rru=addsubscription&name=Scotland+National+Team&url=https%3A%2F%2Fsruzgar.github.io%2Ffixtures%2Fcaledars/scotland.ics"
                target="_blank" rel="noopener noreferrer">
