@@ -11,7 +11,6 @@
   <style>
     :root {
       color-scheme: light;
-      --bg: transparent;
       --card: rgba(255, 255, 255, 0.9);
       --text: #10233f;
       --muted: #5f6b7a;
@@ -38,7 +37,7 @@
       padding: 24px;
     }
 
-    /* Eyebrow banner on top of the card */
+    /* Header (now part of the same visual layer) */
     .eyebrow {
       width: min(720px, 100%);
       text-align: center;
@@ -47,28 +46,32 @@
       color: #fff;
       font-weight: 700;
       font-size: 16px;
-      border-radius: 24px 24px 0 0; /* top corners rounded */
-      margin-bottom: -1px; /* overlap card border for seamless merge */
+      border-radius: 24px 24px 0 0;
+      margin-bottom: -8px; /* stronger overlap */
+      box-shadow: var(--shadow); /* same shadow as card */
+      position: relative;
+      z-index: 2;
     }
 
-    /* Main card */
+    /* Card */
     .card {
       width: min(720px, 100%);
       border: 1px solid var(--border);
-      border-radius: 0 0 24px 24px; /* top corners flat, bottom rounded */
-      overflow: hidden;
+      border-radius: 0 0 24px 24px;
       background: var(--card);
       box-shadow: var(--shadow);
       padding: 28px;
+      position: relative;
+      z-index: 1;
     }
 
-    .card-content h1 {
+    h1 {
       margin: 0 0 10px;
       font-size: clamp(18px, 4vw, 32px);
       line-height: 1.1;
     }
 
-    .card-content p {
+    p {
       margin: 0;
       color: var(--muted);
       font-size: 16px;
@@ -137,8 +140,6 @@
       border-radius: 12px;
       color: var(--text);
       font-size: 14px;
-      word-break: break-word;
-      overflow-wrap: anywhere;
     }
 
     .download-link {
@@ -148,10 +149,6 @@
       text-decoration: none;
       border-bottom: 2px solid rgba(12, 26, 49, 0.2);
       padding-bottom: 2px;
-    }
-
-    .download-link:active {
-      opacity: 0.7;
     }
 
     @media (max-width: 768px) {
@@ -174,47 +171,43 @@
 <body>
   <main class="wrap">
     <div class="eyebrow">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland National Football Team</div>
+
     <section class="card">
-      <div class="card-content">
-        <h1>Subscribe to fixtures & results</h1>
+      <h1>Subscribe to fixtures & results</h1>
 
-        <p>
-          Sync Scotland National Football Team fixtures to your calendar with the latest scores, match details, stadium info, and country flag emojis.
-        </p>
+      <p>
+        Sync Scotland National Football Team fixtures to your calendar with the latest scores, match details, stadium info, and country flag emojis.
+      </p>
 
-        <div class="actions">
-          <a class="btn" href="webcal://fixtures.eh30.net/calendars/scotland.ics">
-            <img src="https://fixtures.eh30.net/media/apple.png" alt="Add to Apple Calendar" />
-            <span>Apple Calendar</span>
-          </a>
+      <div class="actions">
+        <a class="btn" href="webcal://fixtures.eh30.net/calendars/scotland.ics">
+          <img src="https://fixtures.eh30.net/media/apple.png" />
+          <span>Apple Calendar</span>
+        </a>
 
-          <a class="btn"
-             href="https://www.google.com/calendar/render?cid=webcal://fixtures.eh30.net/calendars/scotland.ics"
-             target="_blank" rel="noopener noreferrer">
-            <img src="https://fixtures.eh30.net/media/google.png" alt="Add to Google Calendar" />
-            <span>Google Calendar</span>
-          </a>
+        <a class="btn"
+           href="https://www.google.com/calendar/render?cid=webcal://fixtures.eh30.net/calendars/scotland.ics"
+           target="_blank">
+          <img src="https://fixtures.eh30.net/media/google.png" />
+          <span>Google Calendar</span>
+        </a>
 
-          <a class="btn"
-             href="https://outlook.office.com/owa/?rru=addsubscription&name=Scotland+National+Team&url=https%3A%2F%2Ffixtures.eh30.net%2Fcalendars%2Fscotland.ics"
-             target="_blank" rel="noopener noreferrer">
-            <img src="https://fixtures.eh30.net/media/outlook.png" alt="Add to Outlook Calendar" />
-            <span>Outlook Calendar</span>
-          </a>
-        </div>
+        <a class="btn"
+           href="https://outlook.office.com/owa/?rru=addsubscription&name=Scotland+National+Team&url=https%3A%2F%2Ffixtures.eh30.net%2Fcalendars%2Fscotland.ics"
+           target="_blank">
+          <img src="https://fixtures.eh30.net/media/outlook.png" />
+          <span>Outlook Calendar</span>
+        </a>
+      </div>
 
-        <div class="hint blue">
-          If your calendar app does not open directly, download the calendar file:  
-          <br /><br />
-          <a 
-            class="download-link"
-            href="https://fixtures.eh30.net/calendars/scotland.ics"
-            target="_blank"
-            rel="noopener noreferrer"
-            download="scotland-fixtures.ics">
-            Download Scotland fixtures (.ics)
-          </a>
-        </div>
+      <div class="hint blue">
+        If your calendar app does not open directly, download the calendar file:
+        <br /><br />
+        <a class="download-link"
+           href="https://fixtures.eh30.net/calendars/scotland.ics"
+           download>
+           Download Scotland fixtures (.ics)
+        </a>
       </div>
     </section>
   </main>
