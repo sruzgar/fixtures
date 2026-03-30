@@ -109,9 +109,8 @@ h1 { margin:0 0 16px; font-size:clamp(18px,4vw,28px); line-height:1.1; }
 <script>
 // Inline team data
 const teams = [
-  { "name":"Scotland","short":"scotland","calendar":"calendars/scotland.ics","color":"#0c1a31","emoji":"🏴" },
-  { "name":"England","short":"england","calendar":"calendars/england.ics","color":"#d40000","emoji":"🏴" },
-  { "name":"Wales","short":"wales","calendar":"calendars/wales.ics","color":"#ff0000","emoji":"🏴" }
+  { "name":"Scotland","short":"scotland","calendar":"calendars/scotland.ics","color":"#0c1a31","emoji":"🏴󠁧󠁢󠁳󠁣󠁴󠁿" },
+  { "name":"England","short":"england","calendar":"calendars/england.ics","color":"#d40000","emoji":"🏴󠁧󠁢󠁥󠁮󠁧󠁿" }
   // Add more teams here
 ];
 
@@ -121,7 +120,7 @@ teams.forEach(team => {
   const row = document.createElement('div');
   row.className = 'team-row';
   row.innerHTML = `
-    <div class="team-name">${team.emoji} ${team.name}</div>
+    <div class="team-name">${team.emoji}</div>
     <div class="actions">
       <a class="btn" style="border-color:${team.color}" href="webcal://${team.calendar}">
         <img src="https://fixtures.eh30.net/media/apple.png" alt="Apple Calendar">Apple
