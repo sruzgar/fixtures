@@ -38,6 +38,7 @@
       padding: 24px;
     }
 
+    /* Eyebrow banner on top of the card */
     .eyebrow {
       width: min(720px, 100%);
       text-align: center;
@@ -46,14 +47,15 @@
       color: #fff;
       font-weight: 700;
       font-size: 16px;
-      border-radius: 24px 24px 0 0;
-      margin-bottom: -1px; /* overlaps card border to remove thin line */
+      border-radius: 24px 24px 0 0; /* top corners rounded */
+      margin-bottom: -1px; /* overlap card border for seamless merge */
     }
 
+    /* Main card */
     .card {
       width: min(720px, 100%);
       border: 1px solid var(--border);
-      border-radius: 24px;
+      border-radius: 0 0 24px 24px; /* top corners flat, bottom rounded */
       overflow: hidden;
       background: var(--card);
       box-shadow: var(--shadow);
@@ -154,7 +156,7 @@
 
     @media (max-width: 768px) {
       .card {
-        border-radius: 20px;
+        border-radius: 0 0 20px 20px;
         padding: 22px;
       }
 
