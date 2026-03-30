@@ -149,55 +149,14 @@
       font-size: 15px;
     }
 
-    .download-section {
+    .hint.blue {
       margin-top: 18px;
-    }
-
-    .download-section details {
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      background: #fff;
-      overflow: hidden;
-    }
-
-    .download-section summary {
       padding: 14px 16px;
-      cursor: pointer;
-      list-style: none;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 14px;
-      font-weight: 600;
+      border-left: 4px solid var(--accent);
+      background: #F5F5F5;
+      border-radius: 12px;
       color: var(--text);
-      transition: opacity 0.2s ease;
-      user-select: none;
-    }
-
-    .download-section summary::-webkit-details-marker {
-      display: none;
-    }
-
-    .download-section summary:hover {
-      opacity: 0.75;
-    }
-
-    .download-section summary::after {
-      content: '▼';
-      font-size: 12px;
-      color: var(--muted);
-      transition: transform 0.4s ease;
-    }
-
-    .download-section details[open] summary::after {
-      transform: rotate(-180deg);
-    }
-
-    .download-section .download-content {
-      color: var(--muted);
-      font-size: 13px;
-      line-height: 1.6;
-      padding: 10px 16px 14px 16px;
+      font-size: 14px;
     }
 
     .download-link {
@@ -207,11 +166,6 @@
       text-decoration: none;
       border-bottom: 2px solid rgba(12, 26, 49, 0.2);
       padding-bottom: 2px;
-      transition: border-color 0.2s ease;
-    }
-
-    .download-link:hover {
-      border-bottom-color: var(--accent);
     }
 
     .next-match {
@@ -359,18 +313,10 @@
         font-size: 11px;
       }
 
-      .download-section {
-        margin-top: 14px;
-      }
-
-      .download-section summary {
+      .hint.blue {
+        margin-top: 16px;
         padding: 12px 14px;
         font-size: 13px;
-      }
-
-      .download-section .download-content {
-        padding: 8px 14px 12px 14px;
-        font-size: 12px;
       }
 
       footer {
@@ -384,7 +330,7 @@
 
 <body>
   <main class="wrap">
-    <div class="eyebrow">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland National Football Team 2 </div>
+    <div class="eyebrow">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland National Football Team 3</div>
 
     <section class="card">
       <h1>Subscribe to fixtures & results</h1>
@@ -427,19 +373,14 @@
         </a>
       </div>
 
-      <div class="download-section">
-        <details>
-          <summary>Having trouble subscribing?</summary>
-          <div class="download-content">
-            If your calendar app does not open, you can download the calendar file directly:
-            <br /><br />
-            <a class="download-link"
-               href="https://fixtures.eh30.net/calendars/scotland.ics"
-               download>
-               Download Scotland fixtures (.ics)
-            </a>
-          </div>
-        </details>
+      <div class="hint blue">
+        If your calendar app does not open directly, download the calendar file:
+        <br /><br />
+        <a class="download-link"
+           href="https://fixtures.eh30.net/calendars/scotland.ics"
+           download>
+           Download Scotland fixtures (.ics)
+        </a>
       </div>
     </section>
 
