@@ -1,11 +1,10 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>National Football Team Fixtures</title>
-<link rel="icon" href="https://fixtures.eh30.net/favicon.ico" />
-
+<link rel="icon" href="https://fixtures.eh30.net/favicon.ico">
 <style>
 :root {
   --bg: #f6f8fc;
@@ -23,24 +22,25 @@ body {
   background: var(--bg);
   color: var(--text);
 }
-.wrap {
-  min-height:100vh;
-  display:grid;
-  place-items:center;
-  padding:24px;
+#teams {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  padding: 24px;
+}
+@media(min-width:800px){
+  #teams { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 .card {
-  width:min(720px,100%);
-  background:var(--card);
+  background: var(--card);
   border:1px solid var(--border);
-  border-radius:24px;
-  box-shadow:var(--shadow);
-  padding:28px;
-  position:relative;
-  margin-bottom:24px;
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
 }
 .eyebrow {
-  position:absolute;
+  position: absolute;
   top:0; left:0;
   width:100%;
   text-align:center;
@@ -50,65 +50,52 @@ body {
   font-weight:700;
   font-size:16px;
 }
-.card-content {padding-top:48px;}
-h1 {margin:0 0 10px;font-size:clamp(18px,4vw,32px);line-height:1.1;}
-p {margin:0;color:var(--muted);font-size:16px;line-height:1.6;}
+.card-content { padding: 48px 20px 28px 20px; }
+h1 { margin:0 0 10px; font-size: clamp(18px, 4vw, 28px); line-height:1.1; }
+p { margin:0; color: var(--muted); font-size:15px; line-height:1.5; }
 .actions {
-  display:grid;
-  grid-template-columns:1fr;
-  gap:14px;
-  margin-top:26px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-top: 20px;
 }
-@media(min-width:800px){.actions{grid-template-columns:repeat(2,1fr);}}
+@media(min-width:600px){ .actions { grid-template-columns: repeat(2, 1fr); } }
 .btn {
   display:flex;
-  flex-direction:row;
+  flex-direction:column;
   align-items:center;
-  gap:12px;
-  padding:12px 14px;
+  justify-content:center;
+  gap:8px;
+  padding:14px 10px;
   border-radius:18px;
   border:1px solid var(--border);
   text-decoration:none;
   color:var(--text);
   background:#fff;
-  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
-  min-height:72px;
-  width:100%;
+  min-height:100px;
+  transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
 }
-.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(16,35,63,0.08);border-color:#b8c7d9;}
-.btn:active{transform:scale(0.97);box-shadow:0 4px 12px rgba(16,35,63,0.12);background-color:var(--accent-2);}
-.btn img.flag{width:24px;height:24px;border-radius:4px;}
-.btn span{font-weight:700;font-size:15px;}
-.hint.blue{
-  margin-top:18px;
-  padding:14px 16px;
-  border-left:4px solid #0c1a31;
-  background:#F5F5F5;
-  border-radius:12px;
-  color:var(--text);
-  font-size:14px;
-  word-break:break-word;
+.btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(16,35,63,0.08); border-color:#b8c7d9; }
+.btn:active { transform: scale(0.97); box-shadow:0 4px 12px rgba(16,35,63,0.12); background: var(--accent-2); }
+.btn img { width:36px; height:36px; }
+.btn span { font-weight:700; font-size:14px; }
+.hint.blue {
+  margin-top:14px; padding:12px 14px; border-left:4px solid var(--text); background:#F5F5F5;
+  border-radius:12px; color:var(--text); font-size:13px; word-break:break-word;
 }
-.download-link{
-  display:inline-block;
-  font-weight:600;
-  color:#0c1a31;
-  text-decoration:none;
-  border-bottom:2px solid rgba(12,26,49,0.2);
-  padding-bottom:2px;
-}
-.download-link:active{opacity:0.7;}
-@media(max-width:768px){.card{padding:22px;border-radius:20px;}.btn{min-height:60px;flex-direction:column;}}
+.download-link { color: var(--text); font-weight:600; text-decoration:none; border-bottom:2px solid rgba(16,35,63,0.2); padding-bottom:2px; }
+.download-link:active { opacity:0.7; }
 </style>
 </head>
 <body>
-<main class="wrap" id="teams"></main>
+<main id="teams"></main>
 
 <script>
-// Inline team data with flags
+// Inline team data
 const teams = [
-  { "name":"Scotland","short":"scotland","calendar":"calendars/scotland.ics","color":"#0c1a31","emoji":"🏴","flag":"https://flagcdn.com/w20/gb-sc.png" },
-  { "name":"England","short":"england","calendar":"calendars/england.ics","color":"#d40000","emoji":"🏴","flag":"https://flagcdn.com/w20/gb-eng.png" }
+  { "name":"Scotland","short":"scotland","calendar":"calendars/scotland.ics","color":"#0c1a31","emoji":"🏴" },
+  { "name":"England","short":"england","calendar":"calendars/england.ics","color":"#d40000","emoji":"🏴" }
+  // Add more teams here...
 ];
 
 const container = document.getElementById('teams');
@@ -120,36 +107,31 @@ teams.forEach(team=>{
     <div class="eyebrow" style="background:${team.color}">${team.emoji} ${team.name} National Football Team</div>
     <div class="card-content">
       <h1>Subscribe to fixtures & results</h1>
-      <p>Sync ${team.name} National Football Team fixtures to your calendar with latest scores, stadium info, and country flag.</p>
+      <p>Sync ${team.name} National Football Team fixtures to your calendar with latest scores, stadium info, and country flag emojis.</p>
       <div class="actions">
         <a class="btn" style="border-color:${team.color}" href="webcal://${team.calendar}">
-          <img class="flag" src="${team.flag}" alt="${team.name} flag">
-          <span>Apple Calendar</span>
+          <img src="https://fixtures.eh30.net/media/apple.png" alt="Apple Calendar"><span>Apple Calendar</span>
         </a>
         <a class="btn" style="border-color:${team.color}" href="https://www.google.com/calendar/render?cid=webcal://${team.calendar}" target="_blank" rel="noopener noreferrer">
-          <img class="flag" src="${team.flag}" alt="${team.name} flag">
-          <span>Google Calendar</span>
+          <img src="https://fixtures.eh30.net/media/google.png" alt="Google Calendar"><span>Google Calendar</span>
         </a>
         <a class="btn" style="border-color:${team.color}" href="https://outlook.office.com/owa/?rru=addsubscription&name=${encodeURIComponent(team.name+' National Team')}&url=https://${team.calendar}" target="_blank" rel="noopener noreferrer">
-          <img class="flag" src="${team.flag}" alt="${team.name} flag">
-          <span>Outlook</span>
+          <img src="https://fixtures.eh30.net/media/outlook.png" alt="Outlook Calendar"><span>Outlook</span>
         </a>
       </div>
       <div class="hint blue">
         If your calendar app does not open directly, download the calendar file:<br><br>
-        <a class="download-link" href="${team.calendar}" target="_blank" rel="noopener noreferrer" download="${team.short}-fixtures.ics">
-          Download ${team.name} fixtures (.ics)
-        </a>
+        <a class="download-link" href="${team.calendar}" target="_blank" rel="noopener noreferrer" download="${team.short}-fixtures.ics">Download ${team.name} fixtures (.ics)</a>
       </div>
     </div>
   `;
   container.appendChild(card);
 });
 
-// iOS Webcal handling
+// iOS Webcal fix
 document.querySelectorAll('.btn').forEach(link=>{
   link.addEventListener('click',function(e){
-    const isIOS=/iPhone|iPad|iPod/i.test(navigator.userAgent) || (navigator.platform==='MacIntel' && navigator.maxTouchPoints>1);
+    const isIOS=/iPhone|iPad|iPod/i.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
     if(isIOS && this.href.startsWith('webcal://')){
       e.preventDefault();
       window.location.href=this.href;
