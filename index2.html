@@ -7,18 +7,18 @@
     <meta name="description" content="Subscribe to Scotland National Team fixtures and results in your calendar." />
 
     <!-- Favicon -->
-    <link rel="icon" href="https://sruzgar.github.io/fixtures/favicon.ico" />
+    <link rel="icon" href="https://sruzgar.github.io/fixtures/icons/favicon.ico" />
 
     <style>
       :root {
         color-scheme: light;
-        --bg: #f6f8fc;        /* page background */
-        --card: #ffffff;      /* card background */
-        --text: #10233f;      /* main text */
-        --muted: #5f6b7a;     /* muted text */
-        --border: #d8e0ea;    /* card border */
-        --accent: #0c1a31;    /* Scottish FA dark blue */
-        --accent-2: #e8f2fb;  /* lighter blue for badges/buttons */
+        --bg: #f6f8fc;
+        --card: #ffffff;
+        --text: #10233f;
+        --muted: #5f6b7a;
+        --border: #d8e0ea;
+        --accent: #0065bd;
+        --accent-2: #e8f2fb;
         --shadow: 0 10px 30px rgba(16, 35, 63, 0.08);
       }
 
@@ -27,7 +27,7 @@
       body {
         margin: 0;
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        background: var(--bg);
+        background: linear-gradient(180deg, #eef4fb 0%, var(--bg) 100%);
         color: var(--text);
       }
 
@@ -45,33 +45,24 @@
         border-radius: 24px;
         box-shadow: var(--shadow);
         padding: 28px;
-        position: relative; /* needed for absolute eyebrow */
       }
 
-      /* Full-width header spanning the card */
       .eyebrow {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        text-align: center;
-        padding: 12px 0;
-        border-radius: 24px 24px 0 0; /* match card top corners */
-        background: var(--accent);
-        color: #fff;
-        font-weight: 700;
-        font-size: 16px;
-      }
-
-      /* Add spacing inside the card to account for eyebrow */
-      .card-content {
-        padding-top: 48px; /* enough to push content below eyebrow */
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: var(--accent-2);
+        color: var(--accent);
+        font-weight: 600;
+        font-size: 14px;
       }
 
       h1 {
-        margin: 0 0 10px;
-        font-size: clamp(20px, 5vw, 32px);
-        line-height: 1.1;
+        margin: 18px 0 10px;
+        font-size: clamp(28px, 4vw, 44px);
+        line-height: 1.05;
       }
 
       p {
@@ -84,11 +75,12 @@
       /* Buttons container */
       .actions {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* stacked by default (mobile) */
         gap: 14px;
         margin-top: 26px;
       }
 
+      /* Side-by-side on larger screens */
       @media (min-width: 800px) {
         .actions {
           grid-template-columns: repeat(2, 1fr);
@@ -123,7 +115,7 @@
       .btn:active {
         transform: scale(0.97);
         box-shadow: 0 4px 12px rgba(16, 35, 63, 0.12);
-        background-color: var(--accent-2);
+        background-color: #e8f2fb; /* flash effect */
       }
 
       .btn img {
@@ -136,15 +128,20 @@
         font-size: 15px;
       }
 
-      /* Hint box with blue accent */
-      .hint.blue {
+      .hint {
         margin-top: 18px;
         padding: 14px 16px;
         border-left: 4px solid var(--accent);
-        background: #F5F5F5;
+        background: #f8fbff;
         border-radius: 12px;
-        color: var(--text);
+        color: var(--muted);
         font-size: 14px;
+      }
+
+      .hint.blue {
+        background: #e8f2fb;
+        border-left-color: #0065bd;
+        color: #10233f;
         word-break: break-word;
         overflow-wrap: anywhere;
       }
@@ -154,7 +151,7 @@
         font-weight: 600;
         color: var(--accent);
         text-decoration: none;
-        border-bottom: 2px solid rgba(12, 26, 49, 0.2);
+        border-bottom: 2px solid rgba(0, 101, 189, 0.2);
         padding-bottom: 2px;
       }
 
@@ -196,51 +193,50 @@
     <main class="wrap">
       <section class="card">
         <div class="eyebrow">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland National Football Team</div>
-        <div class="card-content">
-          <h1>Subscribe to fixtures and results</h1>
-          <p>
-            Sync Scotland National Football Team fixtures to your calendar with the latest scores, match details, stadium info, and country flag emojis.
-          </p>
+        <h1>Subscribe to fixtures and results</h1>
+        <p>
+          Add Scotland National Football Team fixtures to your calendar with match details, result updates, stadium information and country flag emojis.
+        </p>
 
-          <div class="actions">
+        <div class="actions">
 
-            <!-- Apple -->
-            <a class="btn" href="webcal://sruzgar.github.io/fixtures/scotland.ics">
-              <img src="https://sruzgar.github.io/fixtures/icons/apple.png" alt="Add to Apple Calendar" />
-              <span>Apple Calendar</span>
-            </a>
+          <!-- Apple -->
+          <a class="btn" href="webcal://sruzgar.github.io/fixtures/scotland.ics">
+            <img src="https://sruzgar.github.io/fixtures/icons/apple.png" alt="Add to Apple Calendar" />
+            <span>Apple Calendar</span>
+          </a>
 
-            <!-- Google -->
-            <a class="btn"
-               href="https://www.google.com/calendar/render?cid=webcal://sruzgar.github.io/fixtures/scotland.ics"
-               target="_blank" rel="noopener noreferrer">
-              <img src="https://sruzgar.github.io/fixtures/icons/google.png" alt="Add to Google Calendar" />
-              <span>Google Calendar</span>
-            </a>
+          <!-- Google -->
+          <a class="btn"
+             href="https://www.google.com/calendar/render?cid=webcal://sruzgar.github.io/fixtures/scotland.ics"
+             target="_blank" rel="noopener noreferrer">
+            <img src="https://sruzgar.github.io/fixtures/icons/google.png" alt="Add to Google Calendar" />
+            <span>Google Calendar</span>
+          </a>
 
-            <!-- Outlook Web -->
-            <a class="btn"
-               href="https://outlook.office.com/owa/?rru=addsubscription&name=Scotland+National+Team&url=https%3A%2F%2Fsruzgar.github.io%2Ffixtures%2Fscotland.ics"
-               target="_blank" rel="noopener noreferrer">
-              <img src="https://sruzgar.github.io/fixtures/icons/outlook.png" alt="Add to Outlook Calendar" />
-              <span>Outlook</span>
-            </a>
+          <!-- Outlook Web -->
+          <a class="btn"
+             href="https://outlook.office.com/owa/?rru=addsubscription&name=Scotland+National+Team&url=webcal://sruzgar.github.io/fixtures/scotland.ics"
+             target="_blank" rel="noopener noreferrer">
+            <img src="https://sruzgar.github.io/fixtures/icons/outlook.png" alt="Add to Outlook Calendar" />
+            <span>Outlook</span>
+          </a>
 
-          </div>
-
-          <div class="hint blue">
-            If your calendar app does not open directly, download the calendar file:  
-            <br /><br />
-            <a 
-              class="download-link"
-              href="https://sruzgar.github.io/fixtures/scotland.ics"
-              target="_blank"
-              rel="noopener noreferrer"
-              download="scotland-fixtures.ics">
-              Download Scotland fixtures (.ics)
-            </a>
-          </div>
         </div>
+
+        <div class="hint blue">
+          If your calendar app does not open directly, download the calendar file:  
+          <br /><br />
+          <a 
+            class="download-link"
+            href="https://sruzgar.github.io/fixtures/scotland.ics"
+            target="_blank"
+            rel="noopener noreferrer"
+            download="scotland-fixtures.ics">
+            Download Scotland fixtures (.ics)
+          </a>
+        </div>
+
       </section>
     </main>
 
