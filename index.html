@@ -21,6 +21,7 @@
     <link rel="icon" href="https://fixtures.eh30.net/favicon.ico" />
     <link rel="preconnect" href="https://fixtures.eh30.net" />
     <link rel="preload" as="image" href="media/grass.png" />
+    <link rel="preload" as="image" href="logo.png" />
 
   <style>
     :root {
@@ -74,6 +75,15 @@
       box-shadow: var(--shadow);
       position: relative;
       z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .eyebrow img {
+      height: 40px;
+      width: auto;
+      display: block;
     }
 
     .card {
@@ -346,6 +356,10 @@
         padding: 14px 0;
       }
 
+      .eyebrow img {
+        height: 32px;
+      }
+
       .next-match {
         padding: 10px 12px;
         margin-top: 14px;
@@ -391,7 +405,9 @@
 
 <body>
   <main class="wrap">
-    <div class="eyebrow">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland National Football Team</div>
+    <div class="eyebrow">
+      <img src="logo.png" alt="Scotland National Football Team" />
+    </div>
 
     <section class="card">
       <h1>Subscribe to fixtures & results</h1>
@@ -430,7 +446,7 @@
            target="_blank"
            rel="noopener">
           <img src="https://fixtures.eh30.net/media/outlook.png" alt="Outlook Calendar icon" />
-          <span>Outlook.com Calendar</span>
+          <span>Outlook Calendar</span>
         </a>
       </div>
 
