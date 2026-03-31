@@ -733,29 +733,25 @@
       }
     }
 
-    // Track calendar button clicks
-    function trackCalendarClick(calendarName) {
-      if (window.plausible) {
-        plausible('Calendar Click', { props: { calendar: calendarName } });
-      }
-    }
-
-    // Add click tracking to calendar buttons
+    // Track all subscription methods
     document.querySelectorAll('.btn').forEach(btn => {
-      btn.addEventListener('click', function() {
-        const calendarName = this.querySelector('span').textContent;
-        trackCalendarClick(calendarName);
-      });
+      btn.addEventListener('click', function(e) {
+        const spanEl = this.querySelector('span');
+        if (spanEl && window.plausible) {
+          const calendar = spanEl.textContent.trim();
+          plausible('Subscribe', { props: { calendar: calendar } });
+        }
+      }, { once: false });
     });
 
-    // Track download link clicks
+    // Track manual download
     const downloadLink = document.querySelector('.download-link');
     if (downloadLink) {
-      downloadLink.addEventListener('click', function() {
+      downloadLink.addEventListener('click', function(e) {
         if (window.plausible) {
-          plausible('Download Click');
+          plausible('Subscribe', { props: { calendar: 'Manual Download' } });
         }
-      });
+      }, { once: false });
     }
 
     // Load upcoming match on page load
