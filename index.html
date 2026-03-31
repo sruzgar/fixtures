@@ -430,7 +430,7 @@
            target="_blank"
            rel="noopener">
           <img src="https://fixtures.eh30.net/media/outlook.png" alt="Outlook Calendar icon" />
-          <span>Outlook.com Calendar</span>
+          <span>Outlook Calendar</span>
         </a>
       </div>
 
@@ -450,8 +450,8 @@
     </section>
 
     <footer>
-      <a href="https://www.scottishfa.co.uk" target="_blank" rel="noopener">Official Scottish FA</a>
-      • We'll Be Coming
+      <a href="https://www.scottishfa.co.uk/scotland-national-team/" target="_blank" rel="noopener">Official Scottish FA</a>
+      • Last updated: March 2026
     </footer>
   </main>
 
@@ -471,6 +471,7 @@
     async function loadUpcomingMatch() {
       try {
         const response = await fetch('https://fixtures.eh30.net/calendars/scotland.ics');
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
         const icsText = await response.text();
 
         // Parse ICS file
@@ -681,22 +682,11 @@
       const dateEl = document.querySelector('.match-date');
       const competitionEl = document.querySelector('.match-competition');
 
-      if (opponentEl) {
-        opponentEl.textContent = 'Unable to load fixture information';
-      }
+      if (opponentEl) opponentEl.textContent = 'Unable to load fixture information';
+      if (dateEl) dateEl.textContent = 'Please try again later';
+      if (competitionEl) competitionEl.textContent = '';
 
-      if (dateEl) {
-        dateEl.textContent = 'Please try again later';
-      }
-
-      if (competitionEl) {
-        competitionEl.textContent = '';
-      }
-
-      // Show the next match section with the error message
-      if (nextMatchEl) {
-        nextMatchEl.classList.add('loaded');
-      }
+      if (nextMatchEl) nextMatchEl.classList.add('loaded');
     }
 
     // Load upcoming match on page load
