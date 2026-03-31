@@ -174,6 +174,15 @@
       display: none;
     }
 
+    .download-accordion summary:focus {
+      outline: none;
+    }
+
+    .download-accordion summary:focus-visible {
+      outline: 2px solid var(--accent);
+      border-radius: 4px;
+    }
+
     .download-accordion summary svg {
       transition: transform 0.3s ease;
       flex-shrink: 0;
@@ -384,7 +393,7 @@
 
 <body>
   <main class="wrap">
-    <div class="eyebrow">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland National Football Team</div>
+    <div class="eyebrow">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland National Football Team test</div>
 
     <section class="card">
       <h1>Subscribe to fixtures & results</h1>
