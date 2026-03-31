@@ -19,6 +19,7 @@
 
     <link rel="canonical" href="https://fixtures.eh30.net/" />
     <link rel="icon" href="https://fixtures.eh30.net/favicon.ico" />
+    <link rel="preconnect" href="https://fixtures.eh30.net" />
     <link rel="preload" as="image" href="media/grass.png" />
 
   <style>
@@ -390,7 +391,7 @@
 
 <body>
   <main class="wrap">
-    <div class="eyebrow">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland National Football Team 8</div>
+    <div class="eyebrow">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland National Football Team</div>
 
     <section class="card">
       <h1>Subscribe to fixtures & results</h1>
@@ -442,13 +443,7 @@
             </svg>
           </summary>
           <div class="content">
-            If your calendar app does not open, you can download the calendar file directly:
-            <br /><br />
-            <a class="download-link"
-               href="https://fixtures.eh30.net/calendars/scotland.ics"
-               download>
-               Download Scotland fixtures (.ics)
-            </a>
+            If your calendar app doesn't open, try <a class="download-link" href="https://fixtures.eh30.net/calendars/scotland.ics" download>downloading the calendar file</a> and importing it manually.
           </div>
         </details>
       </div>
@@ -490,10 +485,12 @@
         if (upcomingEvents.length > 0) {
           const nextMatch = upcomingEvents[0];
           updateMatchDisplay(nextMatch);
+        } else {
+          showNoMatchesMessage();
         }
       } catch (error) {
         console.error('Failed to load upcoming match:', error);
-        // Keep the placeholder content if fetch fails
+        showErrorMessage();
       }
     }
 
@@ -603,6 +600,54 @@
       }
 
       // Show the next match section once data is loaded
+      if (nextMatchEl) {
+        nextMatchEl.classList.add('loaded');
+      }
+    }
+
+    function showNoMatchesMessage() {
+      const nextMatchEl = document.querySelector('.next-match');
+      const opponentEl = document.querySelector('.match-opponent');
+      const dateEl = document.querySelector('.match-date');
+      const competitionEl = document.querySelector('.match-competition');
+
+      if (opponentEl) {
+        opponentEl.textContent = 'No upcoming matches scheduled';
+      }
+
+      if (dateEl) {
+        dateEl.textContent = 'Check back soon for fixture updates';
+      }
+
+      if (competitionEl) {
+        competitionEl.textContent = '';
+      }
+
+      // Show the next match section with the fallback message
+      if (nextMatchEl) {
+        nextMatchEl.classList.add('loaded');
+      }
+    }
+
+    function showErrorMessage() {
+      const nextMatchEl = document.querySelector('.next-match');
+      const opponentEl = document.querySelector('.match-opponent');
+      const dateEl = document.querySelector('.match-date');
+      const competitionEl = document.querySelector('.match-competition');
+
+      if (opponentEl) {
+        opponentEl.textContent = 'Unable to load fixture information';
+      }
+
+      if (dateEl) {
+        dateEl.textContent = 'Please try again later';
+      }
+
+      if (competitionEl) {
+        competitionEl.textContent = '';
+      }
+
+      // Show the next match section with the error message
       if (nextMatchEl) {
         nextMatchEl.classList.add('loaded');
       }
