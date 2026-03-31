@@ -1,0 +1,59 @@
+on:
+  schedule:
+    # Run every 15 minutes
+    - cron: '*/15 * * * *'
+  workflow_dispatch: # Allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch Plausible stats
+        env:
+          PLAUSIBLE_API_KEY: ${{ secrets.PLAUSIBLE_API_KEY }}
+        run: |
+          # Fetch stats from Plausible API
+          # Using the /api/v1/stats/aggregate endpoint
+          RESPONSE=$(curl -s "https://plausible.io/api/v1/stats/aggregate?site_id=fixtures.eh30.net&period=all&metrics=visitors,pageviews" \
+            -H "Authorization: Bearer ${PLAUSIBLE_API_KEY}")
+
+          echo "API Response: $RESPONSE"
+
+          # Extract visitors and pageviews using grep and sed
+          VISITORS=$(echo "$RESPONSE" | grep -o '"visitors":{"value":[0-9]*' | grep -o '[0-9]*$')
+          PAGEVIEWS=$(echo "$RESPONSE" | grep -o '"pageviews":{"value":[0-9]*' | grep -o '[0-9]*$')
+
+          # Fallback to 0 if extraction fails
+          VISITORS=${VISITORS:-0}
+          PAGEVIEWS=${PAGEVIEWS:-0}
+
+          echo "Visitors: $VISITORS"
+          echo "Pageviews: $PAGEVIEWS"
+
+          # Get current timestamp
+          TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+
+          # Create stats.json
+          cat > stats.json << EOF
+          {
+            "visitors": $VISITORS,
+            "pageviews": $PAGEVIEWS,
+            "period": "all",
+            "updated": "$TIMESTAMP"
+          }
+          EOF
+
+          cat stats.json
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add stats.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update visitor stats" && git push)
