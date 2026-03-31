@@ -40,14 +40,18 @@
       padding: 0;
     }
 
-    html {
-      background: url('media/grass.png') no-repeat center 40%;
-      background-size: cover;
-    }
-
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       color: var(--text);
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background: url('media/grass.png') no-repeat center 40%;
+      background-size: cover;
+      z-index: -1;
     }
 
     .wrap {
@@ -392,7 +396,7 @@
 
 <body>
   <main class="wrap">
-    <div class="eyebrow">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland National Football Team 5</div>
+    <div class="eyebrow">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland National Football Team 6</div>
 
     <section class="card">
       <h1>Subscribe to fixtures & results</h1>
