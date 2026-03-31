@@ -477,7 +477,7 @@
     </section>
 
     <footer>
-      <a href="https://www.scottishfa.co.uk" target="_blank" rel="noopener">Official Scottish FA</a>
+      <a href="https://www.scottishfa.co.uk/scotland-national-team/" target="_blank" rel="noopener">Official Scottish FA</a>
       • <span id="footer-phrase">We'll Be Coming</span>
     </footer>
   </main>
@@ -506,10 +506,10 @@
 
         // Find next upcoming match (or currently playing match)
         const now = new Date();
-        const matchDuration = 2 * 60 * 60 * 1000; // 2 hours in milliseconds
         const upcomingEvents = events
           .filter(event => {
-            const matchEnd = new Date(event.start.getTime() + matchDuration);
+            // Use actual end time from ICS, or fallback to 2 hours after start
+            const matchEnd = event.end || new Date(event.start.getTime() + (2 * 60 * 60 * 1000));
             return matchEnd > now; // Show if match hasn't ended yet
           })
           .sort((a, b) => a.start - b.start);
@@ -554,6 +554,10 @@
             const dateStr = line.split(':')[1] || line.split('=').pop();
             currentEvent.start = parseICSDate(dateStr);
             currentProperty = 'start';
+          } else if (line.startsWith('DTEND')) {
+            const dateStr = line.split(':')[1] || line.split('=').pop();
+            currentEvent.end = parseICSDate(dateStr);
+            currentProperty = 'end';
           } else if (line.startsWith('SUMMARY:')) {
             currentEvent.summary = line.substring(8).trim();
             currentProperty = 'summary';
