@@ -739,7 +739,7 @@
         const spanEl = this.querySelector('span');
         if (spanEl && window.plausible) {
           const calendar = spanEl.textContent.trim();
-          plausible('Subscribe', { props: { calendar: calendar } });
+          plausible('Calendar Click', { props: { calendar: calendar } });
         }
       }, { once: false });
     });
@@ -749,7 +749,7 @@
     if (downloadLink) {
       downloadLink.addEventListener('click', function(e) {
         if (window.plausible) {
-          plausible('Subscribe', { props: { calendar: 'Manual Download' } });
+          plausible('Calendar Click', { props: { calendar: 'Manual Download' } });
         }
       }, { once: false });
     }
