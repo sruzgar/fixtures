@@ -446,7 +446,7 @@
            href="https://outlook.office.com/calendar/addcalendar/?rru=addsubscription&name=Scotland+Fixtures&url=webcal%3A%2F%2Ffixtures.eh30.net%2Fcalendars%2Fscotland.ics"
            target="_blank"
            rel="noopener">
-          <img src="media/outlook.png" alt="Outlook Calendar icon" />
+          <img src="media/outlook.png" alt="Outlook.com Calendar icon" />
           <span>Outlook.com Calendar</span>
         </a>
       </div>
@@ -494,10 +494,14 @@
         // Parse ICS file
         const events = parseICS(icsText);
 
-        // Find next upcoming match
+        // Find next upcoming match (or currently playing match)
         const now = new Date();
+        const matchDuration = 2 * 60 * 60 * 1000; // 2 hours in milliseconds
         const upcomingEvents = events
-          .filter(event => event.start > now)
+          .filter(event => {
+            const matchEnd = new Date(event.start.getTime() + matchDuration);
+            return matchEnd > now; // Show if match hasn't ended yet
+          })
           .sort((a, b) => a.start - b.start);
 
         if (upcomingEvents.length > 0) {
