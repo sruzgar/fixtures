@@ -33,6 +33,7 @@
       plausible.init()
     </script>
 
+
   <style>
     :root {
       color-scheme: light;
@@ -759,6 +760,16 @@
           plausible('Calendar Click', { props: { calendar: 'Manual Download' } });
         }
       }, { once: false });
+    }
+
+    // Track Scottish FA link
+    const sfaLink = document.querySelector('footer a[href*="scottishfa.co.uk"]');
+    if (sfaLink) {
+      sfaLink.addEventListener('click', function(e) {
+        if (window.plausible) {
+          plausible('External Link', { props: { destination: 'Scottish FA' } });
+        }
+      });
     }
 
     // Load upcoming match on page load
