@@ -1,3 +1,5 @@
+name: Update Plausible Stats
+
 on:
   schedule:
     # Run every 15 minutes
@@ -18,16 +20,23 @@ jobs:
         env:
           PLAUSIBLE_API_KEY: ${{ secrets.PLAUSIBLE_API_KEY }}
         run: |
-          # Fetch stats from Plausible API
-          # Using the /api/v1/stats/aggregate endpoint
-          RESPONSE=$(curl -s "https://plausible.io/api/v1/stats/aggregate?site_id=fixtures.eh30.net&period=all&metrics=visitors,pageviews" \
-            -H "Authorization: Bearer ${PLAUSIBLE_API_KEY}")
+          # Fetch stats from Plausible API v2
+          # Using the /api/v2/query endpoint
+          RESPONSE=$(curl -s -X POST "https://plausible.io/api/v2/query" \
+            -H "Authorization: Bearer ${PLAUSIBLE_API_KEY}" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "site_id": "fixtures.eh30.net",
+              "metrics": ["visitors", "pageviews"],
+              "date_range": "all"
+            }')
 
           echo "API Response: $RESPONSE"
 
-          # Extract visitors and pageviews using grep and sed
-          VISITORS=$(echo "$RESPONSE" | grep -o '"visitors":{"value":[0-9]*' | grep -o '[0-9]*$')
-          PAGEVIEWS=$(echo "$RESPONSE" | grep -o '"pageviews":{"value":[0-9]*' | grep -o '[0-9]*$')
+          # Extract visitors and pageviews from v2 API response
+          # v2 returns: {"results": [{"metrics": [visitors, pageviews]}]}
+          VISITORS=$(echo "$RESPONSE" | grep -o '"visitors":[0-9]*' | grep -o '[0-9]*' | head -1)
+          PAGEVIEWS=$(echo "$RESPONSE" | grep -o '"pageviews":[0-9]*' | grep -o '[0-9]*' | head -1)
 
           # Fallback to 0 if extraction fails
           VISITORS=${VISITORS:-0}
