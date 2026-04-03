@@ -86,10 +86,10 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:scotland-bolivia-20260606@scotlandfixtures
-DTSTAMP:20260217T193613Z
+DTSTAMP:20260403T210500Z
 DTSTART;TZID=Europe/London:20260606T210000
 DTEND;TZID=Europe/London:20260606T224500
-SUMMARY:🏴 Scotland v 🇧🇴 Bolivia
+SUMMARY:🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland v 🇧🇴 Bolivia
 DESCRIPTION:Friendly Match
 LOCATION:Sports Illustrated Stadium\n600 Cape May St, Harrison, NJ 07029, United States
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="600 Cape May St, Harrison, NJ 07029, United States";X-TITLE="Sports Illustrated Stadium":geo:40.736911,-74.150336
