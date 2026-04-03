@@ -59,6 +59,13 @@
       min-height: 100vh;
     }
 
+    /* Fix iOS Safari background-attachment: fixed bug */
+    @media (max-width: 768px) {
+      html {
+        background-attachment: scroll;
+      }
+    }
+
     body {
       min-height: 100vh;
     }
