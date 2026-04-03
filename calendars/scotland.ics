@@ -91,7 +91,7 @@ DTSTART;TZID=Europe/London:20260606T210000
 DTEND;TZID=Europe/London:20260606T224500
 SUMMARY:🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland v 🇧🇴 Bolivia
 DESCRIPTION:Friendly Match
-LOCATION:Sports Illustrated Stadium\n600 Cape May St, Harrison, NJ 07029, United States
+LOCATION:Sports Illustrated Stadium\n600 Cape May St\, Harrison\, NJ 07029\, United States
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="600 Cape May St, Harriso
  n, NJ  07029, United States";X-APPLE-MAPKIT-HANDLE=CAES7AIIrk0Qm7jRh866q
  P7aARoSCe1FtB1TXkRAEUm5+xyfiVLAIn8KDVVuaXRlZCBTdGF0ZXMSAlVTGgpOZXcgSmVyc
