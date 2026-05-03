@@ -1,6 +1,6 @@
 name: Update Plausible Stats
 
-#on:
+on:
 #  schedule:
     # Run once per day at midnight UTC
 #   - cron: '0 0 * * *'
