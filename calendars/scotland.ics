@@ -11,12 +11,123 @@ CALSCALE:GREGORIAN
 
 BEGIN:VEVENT
 CLASS:PUBLIC
+UID:denmark-scotland-20250905@scotlandfixtures
+DTSTAMP:20260611T000000Z
+DTSTART:20250905T134500Z
+DTEND:20250905T153000Z
+SUMMARY:🇩🇰 Denmark v 🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland (0-0)
+DESCRIPTION:FIFA World Cup Qualifier\n\nhttps://www.scottishfa.co.uk/en/matches/mens-team/denmark-v-scotland-fifa-world-cup-qualifier-20250905\n
+LOCATION:Parken Stadion\nPer Henrik Lings Allé 2\, 2100 København Ø\,
+  Danmark
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Per Henrik Lings Allé 
+ 2, 2100 København Ø, Danmark";X-APPLE-MAPKIT-HANDLE=CAESiAMIrk0QvMK9lM
+ 7+pqlkGhIJTNmOTgLaS0ARGaB+YUMlKUAiswEKB0Rhbm1hcmsSAkRLGhJSZWdpb24gSG92ZW
+ RzdGFkZW4qC0vDuGJlbmhhdm5zMg1Lw7hiZW5oYXZuIMOYOgQyMTAwQgpLw7hiZW5oYXZuUh
+ ZQZXIgSGVucmlrIExpbmdzIEFsbMOpWgEyYhhQZXIgSGVucmlrIExpbmdzIEFsbMOpIDJyCV
+ Nqw6ZsbGFuZIoBBkLDuGdldIoBDFNhbmt0IEpha29ic4oBCcOYc3RlcmJybyoOUGFya2VuIF
+ N0YWRpb24yGFBlciBIZW5yaWsgTGluZ3MgQWxsw6kgMjISMjEwMCBLw7hiZW5oYXZuIMOYMg
+ dEYW5tYXJrOC9QAVpkCjsIvMK9lM7+pqlkEhIJTNmOTgLaS0ARGaB+YUMlKUAYrk2QAwGYAw
+ GiAxFJNjQ1MjlCRjRFMjhGNjEzQ6IfJAi8wr2Uzv6mqWQaGAoOUGFya2VuIFN0YWRpb24QAC
+ oCZW5AAA==;X-APPLE-RADIUS=221.1644428186573;X-APPLE-REFERENCEFRAME=1;X-T
+ ITLE=Parken Stadion:geo:55.703195,12.572780
+END:VEVENT
+
+BEGIN:VEVENT
+CLASS:PUBLIC
+UID:belarus-scotland-20250908@scotlandfixtures
+DTSTAMP:20260611T000000Z
+DTSTART:20250908T134500Z
+DTEND:20250908T153000Z
+SUMMARY:🇧🇾 Belarus v 🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland (0-2)
+DESCRIPTION:FIFA World Cup Qualifier\n\nhttps://www.scottishfa.co.uk/en/matches/mens-team/belarus-v-scotland-fifa-world-cup-qualifier-20250908\n
+LOCATION:ZTE Arena\nOktóber Hatodik tér 14.\, 8900 Zalaegerszeg\, Hung
+ ary
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="8900 Zalaegerszeg, Okt
+ óber Hatodik tér 14., Zalaegerszeg District, Hungary";X-APPLE-MAPKIT-H
+ ANDLE=CAES9wIIrk0QkeqYhsfQ8/33ARoSCdjSo6mebEdAEZw/XChP2TBAIpIBCgdIdW5nYX
+ J5EgJIVRoLWmFsYSBDb3VudHkqFVphbGFlZ2Vyc3plZyBEaXN0cmljdDIMWmFsYWVnZXJzem
+ VnOgQ4OTAwQglCZWx2w6Fyb3NSFU9rdMOzYmVyIEhhdG9kaWsgdMOpcloCMTRiGU9rdMOzYm
+ VyIEhhdG9kaWsgdMOpciAxNC6KAQlCZWx2w6Fyb3MqCVpURSBBcmVuYTIRODkwMCBaYWxhZW
+ dlcnN6ZWcyGU9rdMOzYmVyIEhhdG9kaWsgdMOpciAxNC4yFVphbGFlZ2Vyc3plZyBEaXN0cm
+ ljdDIHSHVuZ2FyeTgvUAFaYQo8CJHqmIbH0PP99wESEgnY0qOpnmxHQBGcP1woT9kwQBiuTZ
+ ADAZgDAaIDEUlGN0ZCQ0U4NDcwQzYzNTExoh8gCJHqmIbH0PP99wEaEwoJWlRFIEFyZW5hEA
+ AqAmVuQAA=;X-APPLE-RADIUS=163.5067231282739;X-APPLE-REFERENCEFRAME=1;X-T
+ ITLE=ZTE Arena:geo:46.848592,16.848864
+END:VEVENT
+
+BEGIN:VEVENT
+CLASS:PUBLIC
+UID:scotland-greece-20251009@scotlandfixtures
+DTSTAMP:20260611T000000Z
+DTSTART:20251009T110000Z
+DTEND:20251009T124500Z
+SUMMARY:🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland v 🇬🇷 Greece (3-1)
+DESCRIPTION:FIFA World Cup Qualifier\n\nhttps://www.scottishfa.co.uk/en/matches/mens-team/scotland-v-greece-fifa-world-cup-qualifier-20251009\n
+LOCATION:Barclays Hampden\nLetherby Drive\, Glasgow\, G42 9BA\, Scotland
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-MAPKIT-HANDLE=CAESxgIIrk0Q
+ rc2Tg96v6J62ARoSCUrIUcq16UtAES20c5oFAhHAInYKDlVuaXRlZCBLaW5nZG9tEgJHQhoI
+ U2NvdGxhbmQqDEdsYXNnb3cgQ2l0eTIHR2xhc2dvdzoHRzQyIDlCQVIOTGV0aGVyYnkgRHJp
+ dmViDkxldGhlcmJ5IERyaXZligEKU291dGggU2lkZYoBCExhbmdzaWRlKhBCYXJjbGF5cyBI
+ YW1wZGVuMg5MZXRoZXJieSBEcml2ZTIHR2xhc2dvdzIHRzQyIDlCQTIIU2NvdGxhbmQ4L1AB
+ WmgKPAitzZOD3q/onrYBEhIJSshRyrXpS0ARLbRzmgUCEcAYrk2QAwGYAwGiAxFJQjYzREEx
+ N0RFMDY0RTZBRKIfJwitzZOD3q/onrYBGhoKEEJhcmNsYXlzIEhhbXBkZW4QACoCZW5AAA==
+ ;X-APPLE-RADIUS=263.695828815801;X-APPLE-REFERENCEFRAME=1;X-TITLE="Barcl
+ ays Hampden\nLetherby Drive, Glasgow, G42 9BA, Scotland":geo:55.825860,-
+ 4.251975
+END:VEVENT
+
+BEGIN:VEVENT
+CLASS:PUBLIC
+UID:scotland-belarus-20251012@scotlandfixtures
+DTSTAMP:20260611T000000Z
+DTSTART:20251012T110000Z
+DTEND:20251012T124500Z
+SUMMARY:🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland v 🇧🇾 Belarus (2-1)
+DESCRIPTION:FIFA World Cup Qualifier\n\nhttps://www.scottishfa.co.uk/en/matches/mens-team/scotland-v-belarus-fifa-world-cup-qualifier-20251012\n
+LOCATION:Barclays Hampden\nLetherby Drive\, Glasgow\, G42 9BA\, Scotland
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-MAPKIT-HANDLE=CAESxgIIrk0Q
+ rc2Tg96v6J62ARoSCUrIUcq16UtAES20c5oFAhHAInYKDlVuaXRlZCBLaW5nZG9tEgJHQhoI
+ U2NvdGxhbmQqDEdsYXNnb3cgQ2l0eTIHR2xhc2dvdzoHRzQyIDlCQVIOTGV0aGVyYnkgRHJp
+ dmViDkxldGhlcmJ5IERyaXZligEKU291dGggU2lkZYoBCExhbmdzaWRlKhBCYXJjbGF5cyBI
+ YW1wZGVuMg5MZXRoZXJieSBEcml2ZTIHR2xhc2dvdzIHRzQyIDlCQTIIU2NvdGxhbmQ4L1AB
+ WmgKPAitzZOD3q/onrYBEhIJSshRyrXpS0ARLbRzmgUCEcAYrk2QAwGYAwGiAxFJQjYzREEx
+ N0RFMDY0RTZBRKIfJwitzZOD3q/onrYBGhoKEEJhcmNsYXlzIEhhbXBkZW4QACoCZW5AAA==
+ ;X-APPLE-RADIUS=263.695828815801;X-APPLE-REFERENCEFRAME=1;X-TITLE="Barcl
+ ays Hampden\nLetherby Drive, Glasgow, G42 9BA, Scotland":geo:55.825860,-
+ 4.251975
+END:VEVENT
+
+BEGIN:VEVENT
+CLASS:PUBLIC
+UID:greece-scotland-20251115@scotlandfixtures
+DTSTAMP:20260611T000000Z
+DTSTART:20251115T144500Z
+DTEND:20251115T163000Z
+SUMMARY:🇬🇷 Greece v 🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland (3-2) 
+DESCRIPTION:FIFA World Cup Qualifier\n\nhttps://www.scottishfa.co.uk/en/matches/mens-team/greece-v-scotland-fifa-world-cup-qualifier-20251115\n
+LOCATION:Stadio Georgios Karaiskáki\nKaraoli & Dimitriou 26\, 185 47 Pi
+ raeus\, Greece
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="Karaoli & Dimitriou 26,
+  185 47 Piraeus, Greece";X-APPLE-MAPKIT-HANDLE=CAES/gIIrk0QwcmB0byk94UKG
+ hIJPC3ktiL5QkARxcsucxWqN0AiXwoGR3JlZWNlEgJHUhoGQXR0aWNhKgdQaXJhZXVzMgdQa
+ XJhZXVzOgYxODUgNDdSE0thcmFvbGkgJiBEaW1pdHJpb3VaAjI2YhZLYXJhb2xpICYgRGlta
+ XRyaW91IDI2KjjOo8+EzqzOtM65zr8gwqvOk861z47Pgc6zzrnOv8+CIM6azrHPgc6xz4rPg
+ 866zqzOus63z4LCuzIWS2FyYW9saSAmIERpbWl0cmlvdSAyNjIOMTg1IDQ3IFBpcmFldXMyB
+ kdyZWVjZTgvUAFaiwEKOgjByYHRvKT3hQoSEgk8LeS2IvlCQBHFyy5zFao3QBiuTZADAZgDA
+ aIDEElBMEJERDIzQ0EyMDY0QzGiH0wIwcmB0byk94UKGkAKOM6jz4TOrM60zrnOvyDCq86Tz
+ rXPjs+BzrPOuc6/z4IgzprOsc+BzrHPis+DzrrOrM66zrfPgsK7EAAqAEAA;X-APPLE-RADI
+ US=304.081758321117;X-APPLE-REFERENCEFRAME=0;X-TITLE="Στάδιο «Γ
+ εώργιος Καραϊσκάκης»":geo:37.946372,23.664390
+END:VEVENT
+
+BEGIN:VEVENT
+CLASS:PUBLIC
 UID:scotland-denmark-20251118@scotlandfixtures
 DTSTAMP:20260611T000000Z
 DTSTART:20251118T144500Z
 DTEND:20251118T163000Z
 SUMMARY:🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland v 🇩🇰 Denmark (4-2)
-DESCRIPTION:FIFA World Cup Qualifier\n\nhttps://www.scottishfa.co.uk/en/matches/mens-team/scotland-v-denmark-fifa-world-cup-qualifier-20251118?tab=post-match\n
+DESCRIPTION:FIFA World Cup Qualifier\n\nhttps://www.scottishfa.co.uk/en/matches/mens-team/scotland-v-denmark-fifa-world-cup-qualifier-20251118\n
 LOCATION:Barclays Hampden\nLetherby Drive\, Glasgow\, G42 9BA\, Scotland
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-MAPKIT-HANDLE=CAESxgIIrk0Q
  rc2Tg96v6J62ARoSCUrIUcq16UtAES20c5oFAhHAInYKDlVuaXRlZCBLaW5nZG9tEgJHQhoI
