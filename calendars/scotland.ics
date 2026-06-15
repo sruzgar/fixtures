@@ -80,8 +80,8 @@ BEGIN:VEVENT
 CLASS:PUBLIC
 UID:scotland-belarus-20251012@scotlandfixtures
 DTSTAMP:20260611T000000Z
-DTSTART:20251012T170000Z
-DTEND:20251012T183000Z
+DTSTART:20251012T180000Z
+DTEND:20251012T193000Z
 SUMMARY:🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland v 🇧🇾 Belarus (2-1)
 DESCRIPTION:FIFA World Cup Qualifier\n\nhttps://www.scottishfa.co.uk/en/matches/mens-team/scotland-v-belarus-fifa-world-cup-qualifier-20251012\n
 LOCATION:Barclays Hampden\nLetherby Drive\, Glasgow\, G42 9BA\, Scotland
@@ -101,8 +101,8 @@ BEGIN:VEVENT
 CLASS:PUBLIC
 UID:greece-scotland-20251115@scotlandfixtures
 DTSTAMP:20260611T000000Z
-DTSTART:20251115T184500Z
-DTEND:20251115T201500Z
+DTSTART:20251115T194500Z
+DTEND:20251115T211500Z
 SUMMARY:🇬🇷 Greece v 🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland (3-2) 
 DESCRIPTION:FIFA World Cup Qualifier\n\nhttps://www.scottishfa.co.uk/en/matches/mens-team/greece-v-scotland-fifa-world-cup-qualifier-20251115\n
 LOCATION:Στάδιο «Γεώργιος Καραϊσκάκης»\nKaraoli & Dimitriou 26\, 185 47 P
