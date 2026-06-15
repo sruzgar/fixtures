@@ -13,8 +13,8 @@ BEGIN:VEVENT
 CLASS:PUBLIC
 UID:denmark-scotland-20250905@scotlandfixtures
 DTSTAMP:20260611T000000Z
-DTSTART:20250905T194500Z
-DTEND:20250905T213000Z
+DTSTART:20250905T124500Z
+DTEND:20250905T131500Z
 SUMMARY:🇩🇰 Denmark v 🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland (0-0)
 DESCRIPTION:FIFA World Cup Qualifier\n\nhttps://www.scottishfa.co.uk/en/matches/mens-team/denmark-v-scotland-fifa-world-cup-qualifier-20250905\n
 LOCATION:Parken Stadion\nPer Henrik Lings Allé 2\, 2100 København Ø\,
@@ -36,8 +36,8 @@ BEGIN:VEVENT
 CLASS:PUBLIC
 UID:belarus-scotland-20250908@scotlandfixtures
 DTSTAMP:20260611T000000Z
-DTSTART:20250908T134500Z
-DTEND:20250908T153000Z
+DTSTART:20250908T124500Z
+DTEND:20250908T131500Z
 SUMMARY:🇧🇾 Belarus v 🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland (0-2)
 DESCRIPTION:FIFA World Cup Qualifier\n\nhttps://www.scottishfa.co.uk/en/matches/mens-team/belarus-v-scotland-fifa-world-cup-qualifier-20250908\n
 LOCATION:ZTE Arena\n8900 Zalaegerszeg\, Október Hatodik tér 14.\, Zalaege
@@ -124,8 +124,8 @@ BEGIN:VEVENT
 CLASS:PUBLIC
 UID:scotland-denmark-20251118@scotlandfixtures
 DTSTAMP:20260611T000000Z
-DTSTART:20251118T144500Z
-DTEND:20251118T163000Z
+DTSTART:20251118T194500Z
+DTEND:20251118T211500Z
 SUMMARY:🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland v 🇩🇰 Denmark (4-2)
 DESCRIPTION:FIFA World Cup Qualifier\n\nhttps://www.scottishfa.co.uk/en/matches/mens-team/scotland-v-denmark-fifa-world-cup-qualifier-20251118\n
 LOCATION:Barclays Hampden\nLetherby Drive\, Glasgow\, G42 9BA\, Scotland
