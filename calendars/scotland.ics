@@ -1,4 +1,4 @@
-BEGIN:VCALENDAR
+iBEGIN:VCALENDAR
 METHOD:PUBLISH
 VERSION:2.0
 PRODID:-//Scotland Fixtures 1.0//EN
@@ -256,7 +256,7 @@ UID:cee3ebe3300073393c1f7b7020d67a52@scotlandfixtures
 DTSTAMP:20260217T193613Z
 DTSTART:20260619T220000Z
 DTEND:20260619T234500Z
-SUMMARY:🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland v 🇲🇦 Morocco
+SUMMARY:🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland v 🇲🇦 Morocco (0-1)
 DESCRIPTION:FIFA World Cup - Group C\n\nhttps://www.fifa.com/en/match-centre/match/17/285023/289273/400021454\n
 LOCATION:Gillette Stadium\n1 Patriot Pl\, Foxborough\, MA  02035\, Unite
  d States
